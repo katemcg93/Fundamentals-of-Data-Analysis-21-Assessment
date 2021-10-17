@@ -3,6 +3,7 @@ import requests as rq
 import csv
 import datetime as dt
 import os
+import pandas as pd
 
 #Getting current date and time so unique, up to date version of site is saved each time code is run
 #Note that underscores are being used instead of slashes, as slashes will cause issues when generating the file path
@@ -55,8 +56,24 @@ with open (csvfilepath,"w") as f:
         if coursematch.fullmatch(dline):
             total_lines = total_lines + 1
             linesplit = re.split('  +', dline)
-            print(linesplit)
             f.write(','.join(linesplit) + '\n')
 
 
 print('Total Lines Processed : {}'.format(total_lines))
+
+headers = ["Course_Code", "Course_Name", "R1_Points", "R2_Points"]
+
+pointsData21 = pd.read_csv (csvfilepath, sep = ',', names = headers)
+print(pointsData21)
+
+rowsAndColumns = pointsData21.shape
+print(rowsAndColumns)
+
+pointsData21['R1_Points'] = pointsData21['R1_Points'].str.replace("*", "")
+
+pointsData21['R1_Points'] = pointsData21['R1_Points'].str.replace("#", "")
+
+pointsData21['R1_Points'] = pointsData21['R1_Points'].apply(pd.to_numeric, errors = 'coerce')
+
+descriptives = pointsData21['R1_Points'].describe()
+print(descriptives)
