@@ -17,4 +17,14 @@ fh_dataframe = fh_dataframe.replace({'male':1}, value = 'Male')
 fh_dataframe = fh_dataframe.replace({'male':0}, value = 'Female')
 fh_dataframe = fh_dataframe.rename(columns= {'male':'gender'})
 
-print(fh_dataframe['gender'])
+eduLevel1 = fh_dataframe[fh_dataframe["education"] == 1]
+eduLevel2 = fh_dataframe[fh_dataframe["education"] == 2]
+eduLevel3 = fh_dataframe[fh_dataframe["education"] == 3]
+eduLevel4 = fh_dataframe[fh_dataframe["education"] == 4]
+
+plt.hist(eduLevel1["BMI"], stacked = True, label = 'Education Level 1', color = '#DD7373')
+plt.hist(eduLevel2["BMI"], stacked = True, label = 'Education Level 2', color = '#3B3561')
+plt.hist(eduLevel3["BMI"], stacked = True, label = 'Education Level 3', color = '#EAD94C')
+plt.hist(eduLevel4["BMI"], stacked = True, label = 'Education Level 4', color = '#51A3A3')
+legend = plt.legend()
+plt.show()
