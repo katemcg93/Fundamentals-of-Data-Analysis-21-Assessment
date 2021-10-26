@@ -54,9 +54,10 @@ with open (csvfilepath,"w") as f:
     for line in  resp.iter_lines ():
         dline = line.decode('cp1252')
         if coursematch.fullmatch(dline):
+            re.sub(r'\[(.*?)\]', lambda m: m.group(2).replace(" ", "_"), dline)
             total_lines = total_lines + 1
-            linesplit = re.split('  +', dline)
-            f.write(','.join(linesplit) + '\n')
+            linesplit = re.split('  + ', dline)
+            f.write(','.join(linesplit) + '\n')     
 
 
 print('Total Lines Processed : {}'.format(total_lines))
@@ -70,9 +71,7 @@ rowsAndColumns = pointsData21.shape
 print(rowsAndColumns)
 
 pointsData21['R1_Points'] = pointsData21['R1_Points'].str.replace("*", "")
-
 pointsData21['R1_Points'] = pointsData21['R1_Points'].str.replace("#", "")
-
 pointsData21['R1_Points'] = pointsData21['R1_Points'].apply(pd.to_numeric, errors = 'coerce')
 
 descriptives = pointsData21['R1_Points'].describe()
