@@ -4,6 +4,8 @@ import csv
 import datetime as dt
 import os
 import pandas as pd
+import urllib
+from urllib.request import urlretrieve
 
 #Getting current date and time so unique, up to date version of site is saved each time code is run
 #Note that underscores are being used instead of slashes, as slashes will cause issues when generating the file path
@@ -23,8 +25,8 @@ resp = rq.get('http://www2.cao.ie/points/l8.php')
 
 
 #Constructing filepath
-filepath  = currentpath + '\\' + 'cao2021'+ nowstrng + '.html'
-csvfilepath = currentpath + '\\' + 'cao2021' + nowstrng + '.csv'
+filepath  = currentpath + '\\' + 'Points_Data'+ '\\' + 'cao2021'+ nowstrng + '.html'
+csvfilepath = currentpath + '\\' +'Points_Data'+ '\\'+ 'cao2021' + nowstrng + '.csv'
 
 print(filepath)
 
@@ -53,6 +55,8 @@ total_lines  = 0
 with open (csvfilepath,"w") as f:
     for line in  resp.iter_lines ():
         dline = line.decode('cp1252')
+        re.sub(' +', " ", dline)
+        re.sub(",", " ", dline)
         if coursematch.fullmatch(dline):
             total_lines = total_lines + 1
             linesplit = re.split('  +', dline)
@@ -63,7 +67,7 @@ print('Total Lines Processed : {}'.format(total_lines))
 
 headers = ["Course_Code", "Course_Name", "R1_Points", "R2_Points"]
 
-pointsData21 = pd.read_csv (csvfilepath, sep = ',', names = headers)
+pointsData21 = pd.read_csv (csvfilepath, sep = ',', names = headers, encoding = 'cp1252')
 print(pointsData21)
 
 rowsAndColumns = pointsData21.shape
@@ -73,7 +77,9 @@ pointsData21['R1_Points'] = pointsData21['R1_Points'].str.replace("*", "")
 
 pointsData21['R1_Points'] = pointsData21['R1_Points'].str.replace("#", "")
 
-pointsData21['R1_Points'] = pointsData21['R1_Points'].apply(pd.to_numeric, errors = 'coerce')
+print(pointsData21.columns)
 
 descriptives = pointsData21['R1_Points'].describe()
 print(descriptives)
+
+pointsData21.to_csv(csvfilepath)

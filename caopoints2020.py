@@ -1,4 +1,5 @@
 import re
+from numpy import rint
 import requests as rq
 import csv
 import datetime as dt
@@ -23,11 +24,16 @@ df2020 = pd.read_excel('http://www2.cao.ie/points/CAOPointsCharts2020.xlsx')
 df2020.to_csv(csvfilepath, encoding = 'utf-8', index = False)
 
 df2020 = df2020.iloc[9:,]
-print(df2020)
 
 df2020.columns = df2020.iloc[0]
 
 
 df2020points = df2020[['COURSE TITLE', 'COURSE CODE2', 'R1 POINTS', 'R2 POINTS']]
-print(df2020points['COURSE TITLE'])
+print(df2020points.columns)
 
+df2020points["R1 POINTS"].str.replace("*", "")
+df2020points["R1 POINTS"].str.replace("#", "")
+
+df2020points["R1 POINTS"].apply(pd.to_numeric, errors = 'coerce')
+
+print(df2020points["R1 POINTS"].apply(pd.to_numeric, errors = 'coerce'))

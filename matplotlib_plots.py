@@ -9,7 +9,6 @@ pd.set_option("display.precision", 2)
 fh_dataframe = pd.read_csv('C:\\Users\\Owner\\Desktop\\Fundamentals-of-Data-Analysis-21-Assessment\\Framingham.csv')
 
 description = fh_dataframe.describe()
-print(description)
 
 
 fh_dataframe = fh_dataframe.replace({'male':1}, value = 'Male')
@@ -21,10 +20,10 @@ eduLevel2 = fh_dataframe[fh_dataframe["education"] == 2]
 eduLevel3 = fh_dataframe[fh_dataframe["education"] == 3]
 eduLevel4 = fh_dataframe[fh_dataframe["education"] == 4]
 
-plt.hist(eduLevel1["BMI"], stacked = True, label = 'Education Level 1', color = '#DD7373')
-plt.hist(eduLevel2["BMI"], stacked = True, label = 'Education Level 2', color = '#3B3561')
-plt.hist(eduLevel3["BMI"], stacked = True, label = 'Education Level 3', color = '#EAD94C')
-plt.hist(eduLevel4["BMI"], stacked = True, label = 'Education Level 4', color = '#51A3A3')
+plt.hist(eduLevel1["BMI"], stacked = True, label = 'Some Second Level Education', color = '#DD7373', bins = 15)
+plt.hist(eduLevel2["BMI"], stacked = True, label = 'Completed Second Level Education', color = '#3B3561',  bins = 15)
+plt.hist(eduLevel3["BMI"], stacked = True, label = 'Some Third Level Education', color = '#EAD94C',  bins = 15)
+plt.hist(eduLevel4["BMI"], stacked = True, label = 'Completed Third Level Education', color = '#51A3A3',  bins = 15)
 legend = plt.legend()
 plt.show()
 plt.close()
@@ -37,7 +36,6 @@ ax = fig.add_subplot(111)
 corrmat = ax.matshow(corr_coeff_fh,cmap = 'rainbow', vmin = -1, vmax = 1)
 fig.colorbar(corrmat)
 ticks = np.arange(0, len(corr_coeff_fh.columns), 1)
-print(ticks)
 ax.set_xticks(ticks)
 plt.xticks(rotation=90)
 ax.set_yticks(ticks)
