@@ -68,18 +68,18 @@ print('Total Lines Processed : {}'.format(total_lines))
 headers = ["Course_Code", "Course_Name", "R1_Points", "R2_Points"]
 
 pointsData21 = pd.read_csv (csvfilepath, sep = ',', names = headers, encoding = 'cp1252')
-print(pointsData21)
 
-rowsAndColumns = pointsData21.shape
-print(rowsAndColumns)
+print(pointsData21["R1_Points"])
 
-pointsData21['R1_Points'] = pointsData21['R1_Points'].str.replace("*", "")
+#Replacing all alphanumeric chars and words with nothing, so I can convert these columns to numeric
+pointsData21['R1_Points'] = pointsData21['R1_Points'].str.replace(r'[^0-9]+', '', regex = True)
+pointsData21['R2_Points'] = pointsData21['R2_Points'].str.replace(r'[^0-9]+','', regex = True)
 
-pointsData21['R1_Points'] = pointsData21['R1_Points'].str.replace("#", "")
+pointsData21['R1_Points'] = pointsData21['R1_Points'].str.replace(r'[a-zA-Z]+', '', regex = True)
+pointsData21['R2_Points'] = pointsData21['R2_Points'].str.replace(r'[a-zA-Z]+', '', regex = True)
+print(pointsData21["R1_Points"])
 
-print(pointsData21.columns)
+pointsData21[["R1_Points"]] = pointsData21[["R1_Points"]].apply(pd.to_numeric)
 
-descriptives = pointsData21['R1_Points'].describe()
-print(descriptives)
-
+print(pointsData21["R1_Points"])
 pointsData21.to_csv(csvfilepath)
