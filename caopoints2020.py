@@ -15,25 +15,26 @@ currentpath = os.getcwd()
 print(currentpath)
 
 #Constructing filepath
-filepath  = currentpath + '\\' + 'cao2020'+ nowstrng + '.html'
-csvfilepath = currentpath + '\\' + 'cao2020' + nowstrng + '.csv'
+filepath  = currentpath + '\\' + 'Points_Data' + '\\' +'cao2020'+ nowstrng + '.html'
+csvfilepath = currentpath + '\\' + 'Points_Data' + '\\' +'cao2020' + nowstrng + '.csv'
 
 print(filepath)
 
-df2020 = pd.read_excel('http://www2.cao.ie/points/CAOPointsCharts2020.xlsx')
+df2020 = pd.read_excel('http://www2.cao.ie/points/CAOPointsCharts2020.xlsx', header = 10, dtype = str)
 df2020.to_csv(csvfilepath, encoding = 'utf-8', index = False)
 
-df2020 = df2020.iloc[9:,]
+print(df2020.columns)
 
-df2020.columns = df2020.iloc[0]
+points2020 = df2020.filter(['COURSE TITLE', 'COURSE CODE2', 'R1 POINTS', 'R2 POINTS'])
+print(points2020)
 
 
-df2020points = df2020[['COURSE TITLE', 'COURSE CODE2', 'R1 POINTS', 'R2 POINTS']]
-print(df2020points.columns)
+points2020['R1 POINTS'] = points2020['R1 POINTS'].str.replace(r'[^0-9]+', '', regex = True)
+points2020['R2 POINTS'] = points2020['R2 POINTS'].str.replace(r'[^0-9]+','', regex = True)
 
-df2020points["R1 POINTS"].str.replace("*", "")
-df2020points["R1 POINTS"].str.replace("#", "")
+points2020['R1 POINTS'] = points2020['R1 POINTS'].str.replace(r'[a-zA-Z]+', '', regex = True)
+points2020['R2 POINTS'] = points2020['R2 POINTS'].str.replace(r'[a-zA-Z]+', '', regex = True)
 
-df2020points["R1 POINTS"].apply(pd.to_numeric, errors = 'coerce')
 
-print(df2020points["R1 POINTS"].apply(pd.to_numeric, errors = 'coerce'))
+points2020 = points2020.rename(columns = {"COURSE TITLE": "Course Name", "COURSE CODE2": "Course Code", "R1 POINTS": "R1_Points", "R2 POINTS": "R2_Points"})
+print(points2020)

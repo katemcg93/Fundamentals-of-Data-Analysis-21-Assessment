@@ -53,7 +53,7 @@ points2019['R2_Points'] = points2019['R2_Points'].str.replace(r'[a-zA-Z]+', '', 
 points2019[["R1_Points"]] = points2019[["R1_Points"]].apply(pd.to_numeric)
 points2019[["R2_Points"]] = points2019[["R2_Points"]].apply(pd.to_numeric)
 
-
+print(points2019["R1_Points"])
 
    
 
