@@ -26,7 +26,7 @@ def download_file(download_url):
     pointsdf = tabula.read_pdf(pdffilepath, pages = 'all')
     count = 0
 
-    colnames = ["Course Code", "Course Name", "R1_Points", "R2_Points"]
+    colnames = ["Course_Code", "Course Name", "R1_Points19", "R2_Points19"]
 
 
     list = []
@@ -43,17 +43,16 @@ def download_file(download_url):
 
 points2019 = download_file(download_url= 'http://www2.cao.ie/points/lvl8_19.pdf')
 
-points2019['R1_Points'] = points2019['R1_Points'].str.replace(r'[^0-9]+', '', regex = True)
-points2019['R2_Points'] = points2019['R2_Points'].str.replace(r'[^0-9]+','', regex = True)
+points2019['R1_Points19'] = points2019['R1_Points19'].str.replace(r'[^0-9]+', '', regex = True)
+points2019['R2_Points19'] = points2019['R2_Points19'].str.replace(r'[^0-9]+','', regex = True)
 
-points2019['R1_Points'] = points2019['R1_Points'].str.replace(r'[a-zA-Z]+', '', regex = True)
-points2019['R2_Points'] = points2019['R2_Points'].str.replace(r'[a-zA-Z]+', '', regex = True)
+points2019['R1_Points19'] = points2019['R1_Points19'].str.replace(r'[a-zA-Z]+', '', regex = True)
+points2019['R2_Points19'] = points2019['R2_Points19'].str.replace(r'[a-zA-Z]+', '', regex = True)
 
 
-points2019[["R1_Points"]] = points2019[["R1_Points"]].apply(pd.to_numeric)
-points2019[["R2_Points"]] = points2019[["R2_Points"]].apply(pd.to_numeric)
+points2019[["R1_Points19"]] = points2019[["R1_Points19"]].apply(pd.to_numeric, downcast = 'integer')
+points2019[["R2_Points19"]] = points2019[["R2_Points19"]].apply(pd.to_numeric, downcast = 'integer')
 
-print(points2019["R1_Points"])
 
    
 

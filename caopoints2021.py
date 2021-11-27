@@ -17,7 +17,7 @@ nowstrng = timenow.strftime('%Y%m%d_%H%M%S')
 #Getting current directory to pass to filepath variable
 
 currentpath = os.getcwd()
-print(currentpath)
+
 
 
 #Getting data from CAO site
@@ -28,7 +28,6 @@ resp = rq.get('http://www2.cao.ie/points/l8.php')
 filepath  = currentpath + '\\' + 'Points_Data'+ '\\' + 'cao2021'+ nowstrng + '.html'
 csvfilepath = currentpath + '\\' +'Points_Data'+ '\\'+ 'cao2021' + nowstrng + '.csv'
 
-print(filepath)
 
 
 #Changing encoding from iso-8859-1 to cp1252, one line uses an x96 character (-) which is not supported in iso-8859-1. 
@@ -63,24 +62,20 @@ with open (csvfilepath,"w") as f:
             f.write(','.join(linesplit) + '\n')
 
 
-print('Total Lines Processed : {}'.format(total_lines))
-
-headers = ["Course_Code", "Course_Name", "R1_Points", "R2_Points"]
+headers = ["Course_Code", "Course_Name", "R1_Points21", "R2_Points21"]
 
 pointsData21 = pd.read_csv (csvfilepath, sep = ',', names = headers, encoding = 'cp1252')
 
-print(pointsData21["R1_Points"])
-
 
 #Replacing all alphanumeric chars and words with nothing, so I can convert these columns to numeric
-pointsData21['R1_Points'] = pointsData21['R1_Points'].str.replace(r'[^0-9]+', '', regex = True)
-pointsData21['R2_Points'] = pointsData21['R2_Points'].str.replace(r'[^0-9]+','', regex = True)
+pointsData21['R1_Points21'] = pointsData21['R1_Points21'].str.replace(r'[^0-9]+', '', regex = True)
+pointsData21['R2_Points21'] = pointsData21['R2_Points21'].str.replace(r'[^0-9]+','', regex = True)
 
-pointsData21['R1_Points'] = pointsData21['R1_Points'].str.replace(r'[a-zA-Z]+', '', regex = True)
-pointsData21['R2_Points'] = pointsData21['R2_Points'].str.replace(r'[a-zA-Z]+', '', regex = True)
-print(pointsData21["R1_Points"])
+pointsData21['R1_Points21'] = pointsData21['R1_Points21'].str.replace(r'[a-zA-Z]+', '', regex = True)
+pointsData21['R2_Points21'] = pointsData21['R2_Points21'].str.replace(r'[a-zA-Z]+', '', regex = True)
 
-pointsData21[["R1_Points"]] = pointsData21[["R1_Points"]].apply(pd.to_numeric)
 
-print(pointsData21["R1_Points"])
+pointsData21[["R1_Points21"]] = pointsData21[["R1_Points21"]].apply(pd.to_numeric, downcast = 'integer')
+pointsData21[["R2_Points21"]] = pointsData21[["R2_Points21"]].apply(pd.to_numeric, downcast = 'integer')
+
 pointsData21.to_csv(csvfilepath)
