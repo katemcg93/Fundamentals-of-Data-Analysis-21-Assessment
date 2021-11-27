@@ -13,22 +13,20 @@ print(currentpath)
 timenow = dt.datetime.now()
 nowstrng = timenow.strftime('%Y%m%d_%H%M%S')
 
-pdffilepath = currentpath + '\\' + 'cao2019' + nowstrng + '.pdf'
+pdffilepath = currentpath + '\\' + 'Points_Data' + '\\' +  'cao2019' + nowstrng + '.pdf'
+excelfilepath = currentpath  + '\\' + 'Points_Data' + '\\' + 'cao2019' + nowstrng + '.xlsx'
 
-def main():
-    download_file('http://www2.cao.ie/points/lvl8_19.pdf')
 
 def download_file(download_url):
     response = urllib.request.urlopen(download_url)
     file = open(pdffilepath, 'wb')
     file.write(response.read())
     file.close()
-    print("Completed")
 
     pointsdf = tabula.read_pdf(pdffilepath, pages = 'all')
     count = 0
 
-    colnames = ["Course Code", "Course Name", "R1 Points", "R2 Points"]
+    colnames = ["Course Code", "Course Name", "R1_Points", "R2_Points"]
 
 
     list = []
@@ -38,11 +36,24 @@ def download_file(download_url):
             list.append(info) 
         
         points2019 = pd.DataFrame (list, columns=colnames)
-        points2019.to_excel('outfile.xlsx', sheet_name='Sheet1', index=True)
+        points2019.to_excel(excelfilepath, sheet_name='Sheet1', index=True)
+    
+    return points2019
+    
+
+points2019 = download_file(download_url= 'http://www2.cao.ie/points/lvl8_19.pdf')
+
+points2019['R1_Points'] = points2019['R1_Points'].str.replace(r'[^0-9]+', '', regex = True)
+points2019['R2_Points'] = points2019['R2_Points'].str.replace(r'[^0-9]+','', regex = True)
+
+points2019['R1_Points'] = points2019['R1_Points'].str.replace(r'[a-zA-Z]+', '', regex = True)
+points2019['R2_Points'] = points2019['R2_Points'].str.replace(r'[a-zA-Z]+', '', regex = True)
+
+
+points2019[["R1_Points"]] = points2019[["R1_Points"]].apply(pd.to_numeric)
+points2019[["R2_Points"]] = points2019[["R2_Points"]].apply(pd.to_numeric)
 
 
 
    
 
-if __name__ == "__main__":
-    main()

@@ -71,6 +71,7 @@ pointsData21 = pd.read_csv (csvfilepath, sep = ',', names = headers, encoding = 
 
 print(pointsData21["R1_Points"])
 
+
 #Replacing all alphanumeric chars and words with nothing, so I can convert these columns to numeric
 pointsData21['R1_Points'] = pointsData21['R1_Points'].str.replace(r'[^0-9]+', '', regex = True)
 pointsData21['R2_Points'] = pointsData21['R2_Points'].str.replace(r'[^0-9]+','', regex = True)
