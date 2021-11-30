@@ -23,7 +23,7 @@ df2020.to_csv(csvfilepath, encoding = 'utf-8', index = False)
 
 
 points2020 = df2020[df2020["LEVEL"] == "8"]
-points2020 = df2020.filter(['COURSE TITLE', 'COURSE CODE2', 'R1 POINTS', 'R2 POINTS', 'CATEGORY (i.e.ISCED description)'])
+points2020 = df2020.filter(['COURSE TITLE', 'COURSE CODE2', 'R1 POINTS', 'R2 POINTS', 'CATEGORY (i.e.ISCED description)', "HEI"])
 
 
 points2020['R1 POINTS'] = points2020['R1 POINTS'].str.replace(r'[^0-9]+', '', regex = True)

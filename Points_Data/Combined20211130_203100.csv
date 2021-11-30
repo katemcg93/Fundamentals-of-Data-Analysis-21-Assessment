@@ -1,0 +1,718 @@
+Course_Code,R1_Points19,R2_Points19,R1_Points20,R2_Points20,Course Category,Course_Name,R1_Points21,R2_Points21
+AL801,304.0,,303.0,,Information and Communication Technologies (ICTs),Software Design for Virtual Reality and Gaming,300.0,
+AL802,301.0,,332.0,,Information and Communication Technologies (ICTs),Software Design in Artificial Intelligence for Clo,313.0,
+AL803,309.0,,337.0,,Information and Communication Technologies (ICTs),Software Design for Mobile Apps and Connected Devi,350.0,
+AL805,329.0,,333.0,,Information and Communication Technologies (ICTs),Computer Engineering for Network Infrastructure,321.0,
+AL810,307.0,,319.0,,Architecture and construction,Quantity Surveying,328.0,
+AL820,300.0,,308.0,,Manufacturing and processing,Mechanical and Polymer Engineering,327.0,
+AL830,410.0,,442.0,,Health,General Nursing,451.0,444.0
+AL832,387.0,,387.0,384.0,Health,Mental Health Nursing,440.0,431.0
+AL836,352.0,,334.0,,Health,Nutrition and Health Science,346.0,
+AL837,351.0,,351.0,,Personal services,Sports Science with Exercise Physiology,357.0,
+AL838,302.0,,307.0,,Biological and related sciences,Biotechnology,324.0,
+AL839,322.0,,325.0,,Biological and related sciences,Microbiology,325.0,
+AL840,328.0,,347.0,,Physical sciences,Pharmaceutical Sciences,346.0,
+AL841,423.0,,430.0,,Health,Athletic and Rehabilitation Therapy,477.0,476.0
+AL842,310.0,,313.0,,Biological and related sciences,Bioveterinary Science,338.0,
+AL843,310.0,,306.0,,Health,Physical Activity and Health Science,306.0,
+AL850,307.0,,309.0,,Business and administration,Business,309.0,
+AL851,301.0,,295.0,,Law,Business and Law,302.0,
+AL852,290.0,,309.0,,Business and administration,Accounting,336.0,
+AL855,312.0,,308.0,,Personal services,Hospitality Management (with international placeme,309.0,
+AL857,300.0,,304.0,,Business and administration,Digital Marketing,304.0,
+AL860,309.0,,300.0,,Welfare,Social Care Practice,301.0,
+AL861,615.0,,578.0,,Arts,Animation and Illustration (portfolio),575.0,
+AL863,703.0,,781.0,,Arts,Graphic and Digital Design (portfolio),747.0,
+AL864,307.0,,307.0,,Welfare,Early Years Care and Education,306.0,
+AL870,409.0,,418.0,,Social and behavioural sciences,Applied Psychology,484.0,467.0
+CW018,327.0,,298.0,248.0,Business and administration,Business (options),307.0,
+CW028,252.0,,252.0,,Welfare,Early Childhood Education and Care,260.0,
+CW038,700.0,,700.0,,Arts,Art (portfolio),700.0,
+CW058,252.0,,298.0,,Personal services,Tourism and Event Management,292.0,
+CW068,251.0,,245.0,,Welfare,Applied Social Studies in Professional Social Care,250.0,
+CW078,266.0,,269.0,,Agriculture,Sustainable Farm Management and Agribusiness,270.0,
+CW088,309.0,,274.0,,Arts,Visual Communications and Design,270.0,
+CW108,261.0,,261.0,,Biological and related sciences,Science (options),266.0,
+CW128,271.0,,263.0,,Biological and related sciences,Brewing and Distilling,307.0,
+CW188,454.0,,451.0,448.0,Health,Sport Rehabilitation and Athletic Therapy,451.0,
+CW208,281.0,,279.0,,Information and Communication Technologies (ICTs),Computer Games Development,272.0,
+CW238,300.0,,297.0,,Information and Communication Technologies (ICTs),Software Development,295.0,
+CW248,307.0,,285.0,,Information and Communication Technologies (ICTs),Information Technology Management,293.0,
+CW268,274.0,,287.0,,Information and Communication Technologies (ICTs),Computing in Interactive Digital Art and Design,291.0,
+CW438,271.0,,272.0,,Architecture and construction,Construction (options),260.0,251.0
+CW468,252.0,,262.0,,Architecture and construction,Architectural Technology,291.0,283.0
+CW478,348.0,,433.0,,Architecture and construction,Civil Engineering,465.0,
+CW548,310.0,,321.0,,Engineering and engineering trades,Mechanical Engineering,330.0,328.0
+CW558,279.0,,280.0,,Engineering and engineering trades,Electronic Systems,280.0,
+CW568,366.0,,380.0,,Engineering and engineering trades,Aerospace Engineering,371.0,359.0
+CW578,327.0,,325.0,,Arts,TV and Media Production,318.0,
+CW708,298.0,,302.0,,Law,Law - LLB,292.0,
+CW728,286.0,,252.0,,Arts,Product Design Innovation,246.0,
+CW748,265.0,,270.0,,Welfare,Early Childhood Education and Care,290.0,
+CW758,290.0,,336.0,,Welfare,Professional Social Care Practice,360.0,358.0
+CW808,248.0,,251.0,,Business and administration,Media and Public Relations,247.0,
+CW848,279.0,,254.0,,Information and Communication Technologies (ICTs),Digital Marketing with Analytics,269.0,
+CW858,700.0,,700.0,,Personal services,Sports Management and Coaching (options,,700.0
+CW908,260.0,,280.0,,Business and administration,Business (options),272.0,
+CW938,270.0,,283.0,,Business and administration,Business with Law,270.0,
+CW948,301.0,,300.0,,Business and administration,Accounting,319.0,
+PC405,251.0,,253.0,216.0,Social and behavioural sciences,Social,,263.0
+PC410,203.0,,252.0,209.0,Humanities (except languages),Arts and Humanities (fulfils Teaching Council requ,262.0,230.0
+PC411,168.0,,255.0,209.0,Humanities (except languages),English and History (fulfils Teaching Council requ,243.0,224.0
+CR105,432.0,,443.0,,Engineering and engineering trades,Chemical and Biopharmaceutical Engineering,443.0,
+CR106,351.0,,411.0,,Information and Communication Technologies (ICTs),Software Development,431.0,
+CR108,425.0,,434.0,,Engineering and engineering trades,Mechanical Engineering,434.0,
+CR109,341.0,,394.0,,Architecture and construction,Structural Engineering,396.0,
+CR110,318.0,,311.0,,Transport services,Automotive Business Management and Technology,336.0,
+CR112,335.0,,361.0,,Arts,Creative Digital Media at CIT Crawford College of,390.0,
+CR116,318.0,,332.0,,Information and Communication Technologies (ICTs),Computer Systems,365.0,
+CR121,633.0,,868.0,,Arts,Music at CIT Cork School of Music,904.0,904.0
+CR125,972.0,,1088.0,,Arts,Popular Music at CIT Cork School of Music,1028.0,
+CR130,500.0,,548.0,518.0,Arts,Musical Theatre at CIT Cork School of Music,525.0,
+CR150,326.0,,335.0,,Business and administration,Business Information Systems,350.0,
+CR210,979.0,,,,Arts,Contemporary Applied Art (Ceramics,,
+CR220,620.0,,,,Arts,Fine Art at CIT Crawford College of Art and Design,400.0,
+CR225,920.0,,,,Arts,Photography with New Media at CIT Crawford College,435.0,
+CR305,279.0,,282.0,,Physical sciences,Physical Sciences (Common Entry),260.0,
+CR310,282.0,,297.0,,Information and Communication Technologies (ICTs),IT Management,347.0,
+CR320,546.0,,565.0,,Biological and related sciences,Biomedical Science - Offered jointly by CIT and UC,590.0,
+CR325,388.0,,398.0,,Biological and related sciences,Pharmaceutical Biotechnology,466.0,
+CR333,360.0,,402.0,,Health,Nutrition and Health Science,425.0,
+CR335,381.0,,420.0,,Biological and related sciences,Biological Sciences (Common Entry),473.0,
+CR340,288.0,,251.0,,Physical sciences,Analytical Chemistry with Quality Assurance,327.0,
+CR360,291.0,,261.0,,Physical sciences,Instrument Engineering,301.0,
+CR365,334.0,,253.0,,Environment,Environmental Science and Sustainable Technology,262.0,
+CR370,408.0,,397.0,,"Interdisciplinary programmes and qualifications involving agriculture, forestry and veterinary",Agri-Biosciences,368.0,
+CR400,316.0,,316.0,,Business and administration,Accounting,315.0,
+CR420,288.0,,285.0,,Business and administration,Marketing,290.0,
+CR425,300.0,,298.0,,Business and administration,International Business with Language,279.0,
+CR510,319.0,,320.0,,Environment,Sustainable Energy Engineering,320.0,
+CR520,434.0,,444.0,,Health,Biomedical Engineering,444.0,
+CR560,288.0,,308.0,,Architecture and construction,Architectural Technology,375.0,
+CR565,336.0,,359.0,,Architecture and construction,Interior Architecture,431.0,
+CR570,279.0,,336.0,,Architecture and construction,Quantity Surveying,375.0,
+CR572,253.0,,269.0,,Architecture and construction,Construction Management,300.0,
+CR580,344.0,,318.0,,Engineering and engineering trades,Electrical Engineering,342.0,
+CR590,342.0,,303.0,,Engineering and engineering trades,Electronic Engineering,329.0,
+CR600,587.0,,,,Arts,Visual Communications at CIT Crawford College of A,280.0,
+CR660,249.0,,252.0,,Personal services,Tourism Management,246.0,
+CR700,768.0,,740.0,645.0,Arts,Theatre and Drama Studies at CIT Cork School of Mu,609.0,609.0
+CK101,300.0,,300.0,,Arts,Arts - 3 years,300.0,
+CK102,391.0,,412.0,,Social and behavioural sciences,Social Science,434.0,431.0
+CK104,340.0,,302.0,,Arts,Arts with Music - 3 or 4 years (BMus or Chinese/Eu,339.0,
+CK105,397.0,,368.0,337.0,Arts,Film and Screen Media - 3 years or 4 years (Intern,421.0,420.0
+CK107,326.0,,328.0,,Humanities (except languages),Geographical and Archaeological Sciences - 3 or 4,312.0,
+CK108,429.0,,401.0,,Languages,Arts International - 4 years,440.0,440.0
+CK109,347.0,,318.0,,Languages,English - 3 years or 4 years (International Pathwa,367.0,357.0
+CK110,456.0,,452.0,433.0,Languages,World Languages,488.0,
+CK111,398.0,,419.0,,Welfare,Early Years and Childhood Studies,409.0,403.0
+CK112,324.0,,330.0,,Arts,Theatre and Performative Practices - 3 or 4 years,371.0,
+CK113,408.0,,423.0,,Social and behavioural sciences,Criminology - 3 years or 4 years (International Pa,464.0,463.0
+CK118,307.0,,336.0,,Arts,Digital Humanities and IT - 3 or 4 years (Work Exp,347.0,339.0
+CK120,506.0,,533.0,532.0,Social and behavioural sciences,Applied Psychology,544.0,543.0
+CK121,393.0,,466.0,,Social and behavioural sciences,Psychology and Computing - 3 or 4 years (Work Expe,499.0,488.0
+CK122,355.0,,337.0,328.0,Social and behavioural sciences,Government and Political Science,399.0,
+CK201,465.0,,477.0,,Business and administration,Commerce,500.0,499.0
+CK202,467.0,,509.0,,Business and administration,Accounting,553.0,543.0
+CK203,409.0,,430.0,,Information and Communication Technologies (ICTs),Business Information Systems,455.0,452.0
+CK204,531.0,,556.0,,Business and administration,Finance,566.0,566.0
+CK205,409.0,,445.0,,Business and administration,Commerce (International) with French,465.0,
+CK206,408.0,,420.0,418.0,Business and administration,Commerce (International) with German,466.0,455.0
+CK207,408.0,,388.0,,Business and administration,Commerce (International) with Italian,423.0,418.0
+CK208,431.0,,402.0,,Business and administration,Commerce (International) with Hispanic Studies,488.0,486.0
+CK209,509.0,,484.0,,Business and administration,Commerce (International) with Irish,507.0,
+CK211,398.0,,397.0,,Business and administration,Commerce (International) with Chinese Studies,385.0,
+CK212,400.0,,444.0,,Social and behavioural sciences,Economics (through Transformational Learning) 3 or,445.0,444.0
+CK301,476.0,,507.0,499.0,Law,Law (Pathways) -,34.0,533.0
+CK302,453.0,,542.0,,Law,Law and French,545.0,
+CK304,462.0,,540.0,,Law,Law and Irish,588.0,
+CK307,522.0,,556.0,,Law,Law and Business,589.0,589.0
+CK401,402.0,,468.0,,Information and Communication Technologies (ICTs),Computer Science,503.0,495.0
+CK402,498.0,,510.0,509.0,Biological and related sciences,Biological and Chemical Sciences,555.0,555.0
+CK404,412.0,,467.0,,Biological and related sciences,Biological,,500.0
+CK405,476.0,,487.0,,Biological and related sciences,Genetics,543.0,
+CK406,457.0,,485.0,472.0,Physical sciences,Chemical Sciences,532.0,
+CK407,531.0,,566.0,565.0,Mathematics and statistics,Mathematical Sciences,566.0,
+CK408,511.0,,554.0,542.0,Physical sciences,Physics and Astrophysics,566.0,
+CK409,413.0,,432.0,,Physical sciences,Industrial Physics - Offered jointly by UCC and CI,465.0,
+CK411,509.0,,510.0,,Information and Communication Technologies (ICTs),Data Science and Analytics,531.0,
+CK504,492.0,,518.0,,Biological and related sciences,Nutritional Sciences,555.0,554.0
+CK505,444.0,,441.0,440.0,Manufacturing and processing,Food Science,463.0,
+CK600,465.0,,487.0,,Engineering and engineering trades,Engineering,510.0,509.0
+CK606,465.0,,484.0,476.0,Architecture and construction,Architecture - Offered jointly by UCC and CIT,543.0,
+CK701,729.0,,731.0,,Health,Medicine (Undergraduate Entry - HPAT required),738.0,737.0
+CK702,590.0,,613.0,613.0,Health,Dentistry,625.0,625.0
+CK703,577.0,,590.0,589.0,Health,Pharmacy,613.0,613.0
+CK704,532.0,,566.0,555.0,Health,Occupational Therapy,601.0,
+CK705,509.0,,520.0,,Health,Speech and Language Therapy,568.0,566.0
+CK706,419.0,,454.0,,Health,Public Health Sciences,500.0,
+CK707,510.0,,542.0,541.0,Health,Medical and Health Sciences,578.0,
+CK710,440.0,,454.0,,Health,General Nursing,498.0,497.0
+CK712,499.0,,533.0,,Health,Children`s and General Nursing (Integrated),565.0,
+CK720,398.0,,423.0,,Health,Mental Health Nursing,455.0,452.0
+CK730,359.0,,419.0,411.0,Health,Intellectual Disability Nursing,431.0,
+CK740,444.0,,484.0,,Health,Midwifery,509.0,
+AC120,234.0,,209.0,,Business and administration,International Business,294.0,294.0
+AC137,252.0,,252.0,,Humanities (except languages),Liberal Arts,271.0,270.0
+CT125,235.0,,220.0,,Information and Communication Technologies (ICTs),Computing and IT,242.0,242.0
+CM001,452.0,,484.0,,Education,Education - Primary Teaching,508.0,
+CM002,421.0,,,,Education,Education - Primary Teaching - Gaeltacht Applicant,462.0,
+CM003,491.0,,528.0,,Education,Oideachas – Bunmhúinteoireacht Trí Mheán na Gaeilg,513.0,
+CM004,492.0,,494.0,,Education,Oideachas - Bunmhúinteoireacht Trí Mheán na Gaeilg,480.0,
+CM010,317.0,,319.0,,Education,Education Studies,382.0,327.0
+CM020,336.0,,327.0,,Education,Early Childhood Education,317.0,
+DB500,242.0,,218.0,218.0,Information and Communication Technologies (ICTs),Computing,234.0,234.0
+DB501,326.0,,227.0,227.0,Information and Communication Technologies (ICTs),Computing (Cloud Computing),178.0,
+DB502,269.0,,341.0,341.0,Information and Communication Technologies (ICTs),Computing (Data Analytics and Big Data),267.0,233.0
+DB510,233.0,,234.0,223.0,Arts,Audio Production and Music Project Management,217.0,217.0
+DB512,229.0,,218.0,203.0,Business and administration,Business Studies,243.0,210.0
+DB514,269.0,,252.0,,Business and administration,Business Studies (Law),239.0,225.0
+DB515,225.0,,244.0,244.0,Business and administration,Business Studies (Human Resource Management),242.0,217.0
+DB517,226.0,,238.0,,Business and administration,Marketing (Event Management),233.0,225.0
+DB521,225.0,,225.0,195.0,Business and administration,Accounting and Finance,243.0,228.0
+DB524,402.0,,342.0,309.0,Information and Communication Technologies (ICTs),Business (Information Systems),247.0,239.0
+DB526,253.0,,347.0,,Information and Communication Technologies (ICTs),Business (Cloud Computing),244.0,244.0
+DB527,235.0,,234.0,260.0,Social and behavioural sciences,Applied Social Care,254.0,219.0
+DB531,220.0,,293.0,,Business and administration,Marketing,288.0,176.0
+DB562,208.0,,243.0,229.0,Social and behavioural sciences,Psychology,244.0,233.0
+DB566,216.0,,220.0,227.0,Social and behavioural sciences,Social Science,262.0,228.0
+DB567,192.0,,218.0,202.0,Arts,Film and Creative Media,245.0,213.0
+DB568,245.0,,219.0,252.0,Law,Law,254.0,228.0
+DC001,398.0,,440.0,,Education,Education - Early Childhood Education,445.0,
+DC002,462.0,,488.0,,Education,Education - Primary Teaching,518.0,
+DC003,433.0,,445.0,,Education,Education - Primary Teaching - Gaeltacht Applicant,489.0,
+DC004,357.0,,411.0,409.0,Education,Education - Primary Teaching (Church of Ireland Ce,451.0,
+DC009,347.0,,376.0,,Arts,Arts (Joint Honours) - Humanities,356.0,
+DC010,386.0,,441.0,429.0,Education,Post Primary Teacher Education - Religious Educati,384.0,
+DC011,352.0,,412.0,391.0,Education,Post Primary Teacher Education - Religious Educati,409.0,
+DC012,367.0,,378.0,,Education,Post Primary Teacher Education - Religious Educati,409.0,
+DC013,410.0,,419.0,,Education,Post Primary Teacher Ed - Gaeilge with French/Germ,413.0,
+DC014,428.0,,419.0,,Arts,BA in Jazz and Contemporary Music Performance (aud,311.0,
+DC110,440.0,,465.0,,Languages,Business Studies International,498.0,
+DC111,463.0,,488.0,,Business and administration,Business Studies,511.0,
+DC112,495.0,,517.0,510.0,Business and administration,Global Business (France),542.0,
+DC113,440.0,,462.0,,Business and administration,Global Business (Germany),484.0,
+DC114,501.0,,522.0,,Business and administration,Global Business (Spain),544.0,
+DC115,487.0,,510.0,,Business and administration,Accounting and Finance,544.0,
+DC116,578.0,,579.0,,Business and administration,Global Business (USA),613.0,
+DC117,463.0,,476.0,475.0,Engineering and engineering trades,Aviation Management / Aviation Management with Pil,484.0,
+DC118,357.0,,359.0,,Business and administration,Gná agus Gaeilge / Business and Irish,368.0,
+DC119,566.0,,564.0,,Business and administration,Global Business (Canada),601.0,
+DC120,350.0,,357.0,,Information and Communication Technologies (ICTs),Computing for Business,403.0,402.0
+DC121,370.0,,400.0,,Information and Communication Technologies (ICTs),Computer Science,475.0,
+DC123,467.0,,465.0,,Information and Communication Technologies (ICTs),Data Science,501.0,
+DC126,520.0,,560.0,,Mathematics and statistics,Actuarial Mathematics,577.0,
+DC127,509.0,,532.0,520.0,Mathematics and statistics,Common Entry into Actuarial and Financial Mathemat,541.0,
+DC131,400.0,,407.0,402.0,Humanities (except languages),Communication Studies,421.0,
+DC132,401.0,,429.0,422.0,Journalism and information,Journalism,452.0,
+DC133,403.0,,411.0,410.0,Arts,Multimedia,435.0,
+DC155,371.0,,387.0,,Languages,Applied Language and Translation Studies,427.0,
+DC161,446.0,,498.0,489.0,Physical sciences,Analytical Science,498.0,
+DC162,488.0,,521.0,,Physical sciences,Chemical and Pharmaceutical Sciences,531.0,
+DC166,412.0,,433.0,399.0,Environment,Environmental Science and Technology,423.0,
+DC168,489.0,,512.0,510.0,Biological and related sciences,Genetics and Cell Biology,543.0,
+DC181,476.0,,499.0,495.0,Biological and related sciences,Biotechnology,530.0,
+DC190,391.0,,413.0,,Engineering and engineering trades,Electronic and Computer Engineering (with choice o,488.0,
+DC193,404.0,,411.0,,Engineering and engineering trades,Mechatronic Engineering,490.0,
+DC195,401.0,,425.0,,Engineering and engineering trades,Mechanical and Manufacturing Engineering,500.0,
+DC197,402.0,,423.0,,Health,Biomedical Engineering,510.0,
+DC200,381.0,,422.0,,Engineering and engineering trades,Common Entry into Engineering (Undenominated Entry,511.0,510.0
+DC202,467.0,,500.0,498.0,Health,Sport Science and Health,511.0,
+DC203,424.0,,435.0,,Education,Science Education,462.0,
+DC204,484.0,,522.0,519.0,Health,Athletic Therapy and Training,558.0,
+DC205,490.0,,531.0,,Education,Physical Education with Biology,565.0,
+DC206,443.0,,499.0,,Education,Physical Education with Mathematics,521.0,
+DC208,509.0,,532.0,521.0,Social and behavioural sciences,Psychology,565.0,
+DC209,419.0,,465.0,440.0,Health,Health and Society,477.0,
+DC215,414.0,,454.0,433.0,Health,General Nursing,456.0,
+DC216,368.0,,418.0,403.0,Health,Mental Health Nursing,420.0,
+DC218,467.0,,500.0,498.0,Health,Children`s and General Nursing (Integrated),521.0,
+DC230,400.0,,435.0,,Social and behavioural sciences,Economics,,431.0
+DC231,387.0,,397.0,,Social and behavioural sciences,International Relations,398.0,
+DC232,453.0,,466.0,,Law,Law and Society (BCL),469.0,
+DC235,307.0,,309.0,,Education,Education and Training - Daytime and Flexible Deli,302.0,
+DC238,358.0,,377.0,,Humanities (except languages),Social Sciences and Cultural Innovation,387.0,
+DC240,451.0,,476.0,474.0,Business and administration,Marketing,,499.0
+DC291,349.0,,376.0,,Arts,Arts (Joint Honours) - Media Studies,350.0,
+DC292,356.0,,403.0,,Arts,Arts (Joint Honours) - Law,400.0,
+DC293,369.0,,377.0,,Arts,Arts (Joint Honours) - International Languages,379.0,
+DC295,348.0,,376.0,,Arts,Arts (Joint Honours) - Politics,349.0,
+DL822,209.0,,229.0,229.0,Business and administration,Arts Management,254.0,
+DL823,260.0,,235.0,,Business and administration,Business Management,220.0,
+DL825,349.0,,379.0,,Social and behavioural sciences,Applied Psychology,418.0,413.0
+DL826,736.0,,855.0,,Arts,Graphic Design,591.0,
+DL827,583.0,,572.0,,Arts,Art,574.0,
+DL832,855.0,,920.0,,Arts,Animation,989.0,
+DL833,636.0,,650.0,,Arts,Photography and Visual Media,671.0,671.0
+DL836,217.0,,219.0,,Information and Communication Technologies (ICTs),Creative Computing,235.0,
+DL837,290.0,,201.0,,Humanities (except languages),New Media Studies,298.0,293.0
+DL838,746.0,,754.0,,Arts,Creative Music Production,713.0,
+GC200,269.0,,252.0,252.0,Business and administration,Business,269.0,242.0
+GC201,251.0,,303.0,303.0,Business and administration,Accounting and Finance,260.0,226.0
+GC230,228.0,,335.0,325.0,Information and Communication Technologies (ICTs),Computing Science,300.0,289.0
+GC300,251.0,,429.0,,Business and administration,Business,264.0,264.0
+GC301,307.0,,253.0,253.0,Business and administration,Accounting and Finance,251.0,
+GC302,269.0,,,,Business and administration,Business - HRM,377.0,377.0
+GC400,246.0,,248.0,248.0,Business and administration,Business,250.0,228.0
+GC401,181.0,,240.0,227.0,Business and administration,Accounting and Finance,242.0,242.0
+GC403,225.0,,244.0,228.0,Law,Law,245.0,242.0
+GC407,246.0,,280.0,280.0,Business and administration,Business (Marketing),264.0,264.0
+GC430,217.0,,252.0,220.0,Information and Communication Technologies (ICTs),Computing Science,251.0,251.0
+GC450,227.0,,254.0,254.0,Journalism and information,Communications and Media Production,225.0,225.0
+GC462,,,,,Arts,Design Communication (portfolio),300.0,
+GC489,267.0,,254.0,,Arts,Interior Architecture (portfolio),288.0,274.0
+GC494,,,337.0,217.0,Arts,Fashion Design (portfolio),351.0,
+AD101,,550.0,,,Arts,First Year Art and Design (Common Entry portfolio),554.0,
+AD102,,635.0,,,Arts,Graphic Design and Moving Image Design (portfolio),538.0,
+AD103,,545.0,,,Arts,Textile and Surface Design and Jewellery and Objec,505.0,
+AD202,,580.0,,,Education,Education and Design or Fine Art (Second Level Tea,591.0,
+AD204,,600.0,,,Arts,Fine Art (portfolio),514.0,
+AD211,,600.0,,,Arts,Fashion Design (portfolio),760.0,679.0
+AD212,,600.0,,,Arts,Product Design (portfolio),413.0,
+AD215,300.0,338.0,377.0,320.0,Arts,Visual Culture,337.0,300.0
+AD217,,625.0,,,Arts,Illustration (portfolio),738.0,
+AD222,,657.0,,,Information and Communication Technologies (ICTs),Interaction Design (portfolio),444.0,
+NC003,261.0,316.0,260.0,,Information and Communication Technologies (ICTs),Computing (Degree Award options),271.0,
+NC005,297.0,320.0,300.0,,Business and administration,Human Resource Management,301.0,
+NC009,297.0,339.0,300.0,,Business and administration,Business,300.0,
+NC010,366.0,399.0,400.0,,Social and behavioural sciences,Psychology,420.0,
+NC020,270.0,307.0,280.0,,Business and administration,Marketing Practice,270.0,
+NC022,338.0,376.0,337.0,,Business and administration,Accounting and Finance,330.0,
+NC023,260.0,303.0,261.0,,Information and Communication Technologies (ICTs),Technology Management (with specialisations),266.0,
+RC001,729.0,733.0,733.0,,Health,Medicine - Undergraduate Entry (HPAT required),741.0,740.0
+RC004,532.0,542.0,566.0,,Health,Physiotherapy,589.0,589.0
+RC005,555.0,566.0,579.0,,Health,Pharmacy,613.0,613.0
+TR002,414.0,473.0,435.0,429.0,Arts,Music,508.0,477.0
+TR003,486.0,518.0,497.0,493.0,Humanities (except languages),History,552.0,543.0
+TR004,532.0,552.0,566.0,565.0,Law,Law,590.0,589.0
+TR005,391.0,446.0,442.0,,Humanities (except languages),Philosophy,510.0,497.0
+TR006,555.0,577.0,567.0,555.0,Social and behavioural sciences,Psychology,601.0,590.0
+TR007,499.0,529.0,529.0,,Health,Clinical Speech and Language Studies,564.0,
+TR009,430.0,465.0,420.0,,Education,Music Education,496.0,486.0
+TR015,566.0,577.0,589.0,,Social and behavioural sciences,Philosophy,,
+TR016,337.0,372.0,340.0,,Languages,Deaf Studies,389.0,
+TR018,532.0,554.0,565.0,,Law,Law and French,602.0,602.0
+TR019,523.0,555.0,543.0,542.0,Law,Law and German,577.0,567.0
+TR021,377.0,495.0,370.0,,Humanities (except languages),Classics,,467.0
+TR022,347.0,407.0,398.0,,Languages,Early and Modern Irish,377.0,
+TR023,463.0,511.0,487.0,476.0,Languages,English Studies,546.0,541.0
+TR024,520.0,544.0,544.0,542.0,Humanities (except languages),European Studies,566.0,
+TR025,489.0,531.0,564.0,530.0,Arts,Drama and Theatre Studies,543.0,519.0
+TR028,339.0,451.0,342.0,,Humanities (except languages),Ancient and Medieval History and Culture,498.0,463.0
+TR031,566.0,589.0,531.0,,Mathematics and statistics,Mathematics,579.0,578.0
+TR032,487.0,520.0,510.0,509.0,Engineering and engineering trades,Engineering,556.0,555.0
+TR033,465.0,488.0,509.0,,Information and Communication Technologies (ICTs),Computer Science,566.0,549.0
+TR034,589.0,602.0,613.0,,Business and administration,Management Science and Information Systems Studies,625.0,625.0
+TR035,554.0,601.0,543.0,,Physical sciences,Theoretical Physics,590.0,589.0
+TR038,499.0,543.0,532.0,,Engineering and engineering trades,Engineering with Management,589.0,589.0
+TR040,485.0,,466.0,,Languages,Middle Eastern and European Languages and Cultures,520.0,499.0
+TR041,347.0,,368.0,,Humanities (except languages),Religion,417.0,
+TR051,730.0,,735.0,734.0,Health,Medicine (HPAT required),743.0,743.0
+TR052,590.0,,613.0,613.0,Health,Dental Science,625.0,625.0
+TR053,533.0,,566.0,566.0,Health,Physiotherapy,590.0,
+TR054,500.0,,533.0,,Health,Occupational Therapy,578.0,577.0
+TR055,510.0,,543.0,,Health,Radiation Therapy,577.0,566.0
+TR056,543.0,,565.0,,Health,Human Health and Disease,601.0,
+TR060,510.0,,543.0,543.0,Biological and related sciences,Biological and Biomedical Sciences,578.0,577.0
+TR061,488.0,,517.0,510.0,Physical sciences,Chemical Sciences,558.0,554.0
+TR062,435.0,,473.0,,Physical sciences,Geography and Geoscience,495.0,
+TR063,498.0,,498.0,498.0,Physical sciences,Physical Sciences,554.0,543.0
+TR072,555.0,,590.0,,Health,Pharmacy,613.0,613.0
+TR080,565.0,,589.0,,Business and administration,Global Business,613.0,
+TR081,518.0,,543.0,543.0,Social and behavioural sciences,Business,,577.0
+TR084,420.0,,462.0,,Welfare,Social Studies (Social Work),497.0,487.0
+TR085,509.0,,540.0,531.0,Business and administration,Business Studies and French,564.0,
+TR086,474.0,,509.0,499.0,Business and administration,Business Studies and German,530.0,
+TR087,467.0,,474.0,465.0,Business and administration,Business Studies and Russian,487.0,
+TR089,393.0,,444.0,424.0,Business and administration,Business Studies and Polish,391.0,
+TR090,510.0,,531.0,,Business and administration,Business Studies and Spanish,566.0,
+TR091,393.0,,429.0,,Health,General Nursing (Meath and St James`s),462.0,456.0
+TR093,378.0,,430.0,429.0,Health,General Nursing (Adelaide School of Nursing),473.0,
+TR095,358.0,,408.0,,Health,Mental Health Nursing,442.0,
+TR097,346.0,,396.0,,Health,Intellectual Disability Nursing,412.0,410.0
+TR911,476.0,,511.0,510.0,Health,Children`s and General Nursing (Integrated),531.0,
+TR913,423.0,,478.0,477.0,Health,Midwifery,521.0,
+DN100,473.0,,510.0,,Architecture and construction,Architecture,555.0,
+DN120,353.0,,407.0,,Architecture and construction,Landscape Architecture,463.0,435.0
+DN130,367.0,,407.0,400.0,Architecture and construction,City Planning and Environmental Policy,445.0,424.0
+DN150,511.0,,531.0,521.0,Engineering and engineering trades,Engineering (Common Entry),565.0,
+DN200,521.0,,533.0,,"Interdisciplinary programmes and qualifications involving natural sciences, Mathematics and statistics",Science (options),577.0,567.0
+DN201,488.0,,510.0,,Information and Communication Technologies (ICTs),Computer Science (Common Entry),554.0,549.0
+DN230,577.0,,601.0,,Mathematics and statistics,Actuarial and Financial Studies,613.0,613.0
+DN250,420.0,,456.0,455.0,"Interdisciplinary programmes and qualifications involving agriculture, forestry and veterinary",Agricultural Science (options),454.0,444.0
+DN261,434.0,,477.0,,Agriculture,Food Science,531.0,
+DN262,493.0,,531.0,,Health,Human Nutrition,566.0,
+DN300,567.0,,589.0,,Veterinary,Veterinary Medicine - Undergraduate Entry,601.0,
+DN310,441.0,,478.0,477.0,Veterinary,Veterinary Nursing,521.0,509.0
+DN400,735.0,,737.0,736.0,Health,Medicine - Undergraduate Entry (HPAT required),743.0,
+DN410,507.0,,534.0,532.0,Health,Radiography,566.0,566.0
+DN420,542.0,,578.0,577.0,Health,Physiotherapy,601.0,601.0
+DN425,488.0,,510.0,509.0,Health,Health and Performance Science,544.0,543.0
+DN430,436.0,,455.0,445.0,Business and administration,Sport and Exercise Management,484.0,476.0
+DN450,398.0,,429.0,424.0,Health,General Nursing,462.0,
+DN451,462.0,,509.0,506.0,Health,Children`s and General Nursing (Integrated),533.0,
+DN452,409.0,,489.0,476.0,Health,Midwifery,510.0,509.0
+DN453,379.0,,397.0,393.0,Health,Mental Health Nursing,442.0,
+DN520,336.0,,310.0,,Arts,Joint Honours (options),381.0,378.0
+DN530,348.0,,340.0,336.0,Humanities (except languages),Humanities (options),397.0,388.0
+DN541,348.0,,303.0,,Languages,Modern Languages (options),320.0,
+DN600,520.0,,546.0,544.0,Law,Law (options),576.0,567.0
+DN610,521.0,,545.0,,Business and administration,Business and Law,573.0,567.0
+DN650,498.0,,521.0,521.0,Business and administration,Commerce,555.0,
+DN660,507.0,,517.0,511.0,Business and administration,Commerce International (options),555.0,554.0
+DN670,601.0,,613.0,,Business and administration,Economics and Finance,625.0,625.0
+DN700,388.0,,421.0,419.0,Social and behavioural sciences,Social Sciences (options),475.0,474.0
+DN710,476.0,,498.0,498.0,Social and behavioural sciences,Economics,534.0,532.0
+DN720,517.0,,530.0,522.0,Social and behavioural sciences,Psychology,566.0,564.0
+DN750,330.0,,378.0,,Social and behavioural sciences,Social Policy and Sociology,421.0,
+DK810,306.0,,305.0,305.0,Business and administration,Accounting and Finance,307.0,307.0
+DK816,300.0,,300.0,300.0,Business and administration,Business Studies,301.0,301.0
+DK820,307.0,,311.0,311.0,Information and Communication Technologies (ICTs),Computing in Games Development,309.0,309.0
+DK821,301.0,,302.0,302.0,Information and Communication Technologies (ICTs),Computing in Software Development,320.0,316.0
+DK830,302.0,,336.0,,Architecture and construction,Building Surveying,305.0,
+DK831,301.0,,389.0,,Architecture and construction,Architectural Technology,368.0,314.0
+DK832,300.0,,387.0,,Architecture and construction,Construction Management,358.0,305.0
+DK843,303.0,,340.0,340.0,Engineering and engineering trades,Engineering (Common Entry),404.0,391.0
+DK861,300.0,,302.0,302.0,Social and behavioural sciences,Arts,302.0,302.0
+DK862,300.0,,301.0,,Welfare,Social Care,322.0,319.0
+DK863,300.0,,308.0,308.0,Arts,Creative Media,336.0,320.0
+DK864,300.0,,300.0,300.0,Arts,Film and Television Production,308.0,
+DK865,301.0,,301.0,,Arts,Audio and Music Production,352.0,
+DK870,392.0,,403.0,401.0,Health,General Nursing,440.0,440.0
+DK872,300.0,,336.0,,Health,Intellectual Disability Nursing,367.0,366.0
+DK874,356.0,,356.0,,Health,Mental Health Nursing,398.0,
+DK876,305.0,,321.0,,Welfare,Early Childhood Studies,300.0,
+DK877,398.0,,440.0,,Health,Midwifery,482.0,477.0
+DK880,300.0,,328.0,,Health,Health and Physical Activity,301.0,
+DK882,303.0,,310.0,,"Interdisciplinary programmes and qualifications involving agriculture, forestry and veterinary",Agriculture (Award options),342.0,
+DK883,300.0,,358.0,321.0,"Interdisciplinary programmes and qualifications involving natural sciences, Mathematics and statistics",Science (Award options),373.0,368.0
+GA181,303.0,,309.0,,Business and administration,Accounting,303.0,
+GA182,290.0,,287.0,,Business and administration,Business,285.0,
+GA183,309.0,,296.0,,Information and Communication Technologies (ICTs),Business Information Systems,298.0,
+GA184,307.0,,307.0,,Business and administration,Marketing and Sales,300.0,
+GA185,307.0,,293.0,,Business and administration,Finance and Economics,318.0,
+GA186,297.0,,280.0,,Business and administration,Business with Entrepreneurship,287.0,
+GA187,280.0,,281.0,,Agriculture,Rural Enterprise and Agri-Business,291.0,
+GA281,287.0,,304.0,,Arts,Film and Documentary,310.0,301.0
+GA282,238.0,,220.0,,Social and behavioural sciences,Heritage Studies,252.0,
+GA283,260.0,,679.0,,Arts,Contemporary Art (portfolio),790.0,
+GA284,309.0,,303.0,,Arts,Design,331.0,
+GA380,225.0,,242.0,,Personal services,International Hotel Management,218.0,
+GA381,261.0,,278.0,,Personal services,International Tourism Management,252.0,
+GA382,225.0,,206.0,,Manufacturing and processing,Culinary and Gastronomic Science,235.0,
+GA480,260.0,,260.0,,Architecture and construction,Construction Management,302.0,
+GA482,280.0,,288.0,,Architecture and construction,Quantity Surveying and Construction Economics,304.0,
+GA483,251.0,,265.0,,Architecture and construction,Architectural Technology,281.0,273.0
+GA484,270.0,,290.0,,Architecture and construction,Civil Engineering,377.0,
+GA580,301.0,,300.0,,Engineering and engineering trades,Software and Electronic Engineering,300.0,
+GA680,336.0,,330.0,,Engineering and engineering trades,Mechanical Engineering,400.0,
+GA681,281.0,,293.0,,Engineering and engineering trades,Energy Engineering,312.0,
+GA682,331.0,,313.0,,Engineering and engineering trades,Biomedical Engineering,331.0,
+GA683,301.0,,309.0,,Engineering and engineering trades,Agricultural Engineering,304.0,
+GA684,346.0,,340.0,,Engineering and engineering trades,Engineering Common Entry to Manu/Agri/Biomed/Energ,413.0,
+GA780,300.0,,327.0,,Biological and related sciences,Applied Freshwater and Marine Biology,366.0,
+GA781,317.0,,337.0,,Biological and related sciences,Applied Biology and Biopharmaceutical Science,381.0,
+GA782,307.0,,336.0,,Environment,Chemical and Pharmaceutical Science,356.0,
+GA783,373.0,,363.0,,Physical sciences,Physics and Instrumentation,301.0,
+GA784,327.0,,372.0,,Biological and related sciences,Science (Undenominated),445.0,
+GA785,451.0,,473.0,,Health,Medical Science,517.0,510.0
+GA786,300.0,,317.0,,Physical sciences,Forensic Science and Analysis,408.0,
+GA787,275.0,,270.0,,Information and Communication Technologies (ICTs),Computing in Software Development,310.0,
+GA788,270.0,,274.0,,Information and Communication Technologies (ICTs),Computing and Digital Media,270.0,
+GA789,297.0,,287.0,,Agriculture,Agriculture and Environmental Management,340.0,
+GA790,350.0,,356.0,,Personal services,Sport and Exercise Science,376.0,366.0
+GA791,364.0,,368.0,,Biological and related sciences,Public Health Nutrition,368.0,
+GA880,389.0,,429.0,422.0,Health,General Nursing,440.0,
+GA882,346.0,,367.0,,Health,Psychiatric Nursing,369.0,
+GA885,210.0,,252.0,,Personal services,Outdoor Education,269.0,
+GA887,228.0,,244.0,,Humanities (except languages),History and Geography,201.0,
+GA889,260.0,,266.0,,Welfare,Applied Social Care,265.0,
+GA890,278.0,,270.0,,Education,Early Childhood Education and Care,281.0,227.0
+GA980,376.0,,377.0,,Education,Education (Design Graphics and Construction),410.0,
+GY101,300.0,,300.0,,Arts,Arts (Joint-Honours),327.0,326.0
+GY104,507.0,,523.0,520.0,Social and behavioural sciences,BSc (Psychology),564.0,555.0
+GY105,318.0,,301.0,,Humanities (except languages),Arts (History),357.0,
+GY109,411.0,,403.0,,Education,Arts (Mathematics and Education),413.0,
+GY110,382.0,,357.0,,Social and behavioural sciences,Arts (Children and Youth Studies - options),387.0,
+GY111,402.0,,330.0,,Arts,Arts (English and Creative Writing),421.0,420.0
+GY113,338.0,,368.0,,Social and behavioural sciences,Arts with Human Rights,413.0,
+GY115,328.0,,387.0,,Arts,Arts with Performing Arts Studies,300.0,
+GY118,410.0,,451.0,,Arts,Arts (Drama,,453.0
+GY119,410.0,,400.0,,Journalism and information,Arts (Journalism),484.0,473.0
+GY122,308.0,,361.0,,Arts,Na Dána (Cumarsáid agus Gaeilge),410.0,
+GY123,357.0,,358.0,,Social and behavioural sciences,Applied Social Sciences,419.0,
+GY125,324.0,,328.0,,Arts,Arts (Digital Arts and Technology),403.0,
+GY127,387.0,,401.0,,Arts,Arts (Film and Digital Media),430.0,421.0
+GY128,370.0,,352.0,,Languages,Arts (Global Languages),346.0,
+GY130,400.0,,408.0,,Arts,Arts (Music),462.0,
+GY132,402.0,,407.0,,Social and behavioural sciences,Government (Politics,,465.0
+GY133,401.0,,422.0,,Education,Education (Computer Science and Mathematical Studi,454.0,
+GY201,420.0,,433.0,,Business and administration,Commerce,476.0,
+GY202,484.0,,484.0,,Business and administration,Commerce (International) with French,520.0,
+GY203,489.0,,489.0,,Business and administration,Commerce (International) with German,518.0,
+GY204,484.0,,495.0,,Business and administration,Commerce (International) with Spanish,506.0,
+GY206,431.0,,465.0,,Business and administration,Business Information Systems (Work Placement and O,509.0,
+GY207,486.0,,509.0,,Business and administration,Commerce (Accounting) including optional Global Ex,543.0,
+GY208,473.0,,473.0,,Business and administration,Commerce (Gaeilge),508.0,
+GY209,509.0,,530.0,,Business and administration,Commerce (Global Experience),551.0,
+GY250,436.0,,487.0,,Law,Law and Business,510.0,
+GY251,473.0,,499.0,,Law,Law (BCL),542.0,
+GY252,510.0,,520.0,,Law,Law (BCL) and Human Rights,565.0,
+GY261,486.0,,497.0,,Business and administration,Business Studies in International Hotel Management,503.0,
+GY262,671.0,,681.0,,Business and administration,Commerce in International Hotel Management (interv,709.0,
+GY301,400.0,,433.0,432.0,Biological and related sciences,Science,489.0,488.0
+GY303,533.0,,556.0,,Biological and related sciences,Biomedical Science,613.0,
+GY304,473.0,,465.0,,Engineering and engineering trades,Biotechnology,498.0,495.0
+GY308,413.0,,408.0,,Environment,Environmental Science,431.0,430.0
+GY309,454.0,,487.0,,Mathematics and statistics,Financial Mathematics and Economics,509.0,
+GY310,409.0,,419.0,,Physical sciences,Marine Science,467.0,
+GY313,402.0,,412.0,,Hygiene and occupational health services,Environmental Health and Safety,412.0,
+GY314,402.0,,403.0,,Physical sciences,Earth and Ocean Sciences,422.0,
+GY318,510.0,,509.0,,Biological and related sciences,Biopharmaceutical Chemistry,555.0,
+GY319,456.0,,476.0,,Mathematics and statistics,Mathematical Science,543.0,
+GY320,401.0,,402.0,,Physical sciences,Physics (Degree options: Applied Astrophysics Biom,465.0,
+GY350,425.0,,403.0,,Information and Communication Technologies (ICTs),Computer Science and Information Technology,495.0,
+GY401,444.0,,465.0,,Engineering and engineering trades,Engineering (Undenominated),522.0,520.0
+GY402,509.0,,455.0,,Architecture and construction,Civil Engineering,533.0,521.0
+GY405,443.0,,454.0,,Engineering and engineering trades,Mechanical Engineering,541.0,
+GY406,509.0,,510.0,,Engineering and engineering trades,Electronic and Computer Engineering,555.0,
+GY408,519.0,,509.0,,Engineering and engineering trades,Biomedical Engineering,554.0,
+GY410,434.0,,403.0,,Architecture and construction,Project and Construction Management,431.0,
+GY413,532.0,,502.0,,Engineering and engineering trades,Energy Systems Engineering,509.0,
+GY414,454.0,,405.0,,Engineering and engineering trades,Electrical and Electronic Engineering,433.0,
+GY501,726.0,,728.0,,Health,Medicine (five year/six year course,,737.0
+GY502,532.0,,555.0,,Health,Occupational Therapy,601.0,
+GY503,529.0,,543.0,,Health,Speech and Language Therapy,578.0,
+GY504,434.0,,443.0,,Health,Podiatric Medicine,531.0,526.0
+GY515,442.0,,476.0,473.0,Health,General Nursing (Galway and Portiuncula),502.0,496.0
+GY516,388.0,,440.0,,Health,Mental Health Nursing,475.0,441.0
+GY517,429.0,,495.0,,Health,Midwifery,520.0,509.0
+LY108,318.0,,309.0,,Business and administration,Business - Accounting,312.0,
+LY118,287.0,,290.0,,Business and administration,Business,288.0,
+LY208,300.0,,300.0,,Law,Law,300.0,290.0
+LY228,278.0,,300.0,,Personal services,Sports and Exercise - Common Entry,290.0,
+LY408,307.0,,320.0,,Arts,Design - Common Entry,301.0,
+LY508,270.0,,276.0,,Architecture and construction,Fire Safety Engineering,283.0,
+LY518,307.0,,301.0,,Architecture and construction,Quantity Surveying,304.0,
+LY528,267.0,,271.0,,Architecture and construction,Construction Management,262.0,
+LY618,307.0,,312.0,,Engineering and engineering trades,Electronic Engineering,321.0,
+LY708,300.0,,306.0,,Information and Communication Technologies (ICTs),Applied Computing,320.0,
+LY818,302.0,,303.0,,Biological and related sciences,Science - Common Entry,302.0,
+LY828,300.0,,307.0,,Agriculture,Agriculture - Common Entry,308.0,300.0
+LY908,383.0,,400.0,,Health,General Nursing,429.0,
+LY918,291.0,,357.0,,Health,Psychiatric Nursing,367.0,
+LY928,288.0,,326.0,,Health,Intellectual Disability Nursing,357.0,
+LY968,300.0,,303.0,,Welfare,Early Childhood Care,,288.0
+LY978,260.0,,280.0,,Health,Health and Social Care - Common Entry,279.0,
+MI001,345.0,,375.0,,Arts,Contemporary and Applied Theatre Studies,209.0,
+MI002,300.0,,300.0,281.0,Arts,Arts,280.0,
+MI005,473.0,,495.0,,Education,Education - Primary Teaching,522.0,
+MI006,442.0,,456.0,,Education,Education - Primary Teaching - Gaeltacht Applicant,485.0,
+MI007,366.0,,357.0,,Education,Early Childhood Care and Education,409.0,
+MI008,543.0,,588.0,,Education,Education and Psychology - Primary Teaching,590.0,
+MI009,392.0,,402.0,,Education,Education,,434.0
+MI010,326.0,,368.0,,Education,Education,,370.0
+MI011,377.0,,409.0,,Education,Education,,407.0
+MI012,398.0,,401.0,,Education,Education,,387.0
+MI013,433.0,,444.0,,Education,Education,,509.0
+LC110,734.0,,740.0,,Arts,Art and Design (Common Entry,,794.0
+LC114,900.0,,880.0,,Arts,Fashion and Textiles for Product and Costume (port,914.0,
+LC220,254.0,,262.0,,Business and administration,Digital Marketing,263.0,
+LC223,308.0,,307.0,,Law,Law and Taxation,331.0,
+LC224,299.0,,300.0,,Business and administration,Accounting and Finance,300.0,
+LC225,298.0,,298.0,,Business and administration,Marketing and Management,298.0,
+LC226,216.0,,234.0,234.0,Business and administration,Enterprise and Innovation,255.0,
+LC233,300.0,,272.0,,Information and Communication Technologies (ICTs),Software Development,280.0,
+LC234,219.0,,225.0,,Information and Communication Technologies (ICTs),Immersive Digital Media and Spatial Computing,226.0,
+LC236,298.0,,262.0,260.0,Information and Communication Technologies (ICTs),Internet Systems Development,260.0,
+LC239,335.0,,307.0,,Information and Communication Technologies (ICTs),Computer Networks and Systems Management,317.0,
+LC241,276.0,,255.0,,Architecture and construction,Construction Management,326.0,
+LC242,292.0,,282.0,,Architecture and construction,Property Valuation and Management,308.0,
+LC243,281.0,,294.0,,Architecture and construction,Quantity Surveying,278.0,
+LC248,307.0,,288.0,,Architecture and construction,Built Environment (Common Entry),300.0,
+LC252,281.0,,270.0,,Architecture and construction,Civil Engineering Management,264.0,
+LC263,282.0,,294.0,,Health,Medical Technology,391.0,
+LC265,335.0,,413.0,,Physical sciences,Forensic and Pharmaceutical Sciences,498.0,
+LC266,236.0,,262.0,,Environment,Drug and Medicinal Product Analysis,252.0,
+LC275,288.0,,298.0,,Engineering and engineering trades,Electrical Engineering,361.0,347.0
+LC288,307.0,,347.0,346.0,Engineering and engineering trades,Mechanical Engineering,378.0,369.0
+LC289,280.0,,291.0,,Engineering and engineering trades,Precision Engineering,261.0,
+LC292,360.0,,367.0,,Welfare,Social Care Work,374.0,
+LC293,299.0,,307.0,,Personal services,Business Studies with Travel and Tourism Managemen,271.0,264.0
+LC294,271.0,,279.0,,Personal services,Business Studies with Event Management,279.0,
+LC295,263.0,,252.0,,Business and administration,Business Studies with Sports Management,262.0,
+LC297,217.0,,235.0,,Social and behavioural sciences,Community and Addiction Studies,272.0,262.0
+LC320,337.0,,346.0,,Business and administration,Business,381.0,
+LC330,298.0,,297.0,,Information and Communication Technologies (ICTs),Business with Computing,328.0,308.0
+LC340,298.0,,350.0,,Arts,Interior Design,391.0,368.0
+LC371,298.0,,309.0,,Arts,Creative Broadcast and Film Production,325.0,310.0
+LC372,321.0,,325.0,,Arts,Music Technology and Production,377.0,
+LC374,317.0,,318.0,,Engineering and engineering trades,Renewable and Electrical Energy Engineering,337.0,319.0
+LC375,321.0,,317.0,,Engineering and engineering trades,Industrial Automation and Robotic Systems,309.0,
+LC376,308.0,,318.0,,Engineering and engineering trades,Electronic Engineering with Computer Systems,357.0,
+LC380,282.0,,303.0,298.0,Transport services,Automotive Engineering and Transport Management,298.0,
+LC392,217.0,,236.0,,Personal services,Business Studies in Beauty and Spa Management,328.0,317.0
+LC393,260.0,,236.0,,Welfare,Early Childhood Education and Care,309.0,276.0
+LC402,209.0,,225.0,,Welfare,Social Care Work,228.0,
+LC408,262.0,,279.0,,Environment,Environmental Science and Climate,279.0,
+LC418,271.0,,270.0,,Information and Communication Technologies (ICTs),Computing - Games Design and Development,260.0,256.0
+LC422,288.0,,298.0,,Personal services,Applied Strength and Conditioning,289.0,
+LC502,838.0,,852.0,,Information and Communication Technologies (ICTs),Game Art and Design (portfolio),841.0,
+LC517,229.0,,234.0,,Information and Communication Technologies (ICTs),Creative Media and Design,279.0,
+LC518,816.0,,808.0,,Information and Communication Technologies (ICTs),Digital Animation Production (portfolio),807.0,
+LC612,319.0,,320.0,,Welfare,Social Care Work,309.0,
+LM002,329.0,,348.0,,Humanities (except languages),Arts,360.0,360.0
+LM020,436.0,,465.0,,Law,Law and Accounting,474.0,
+LM026,307.0,,303.0,,Arts,Performing Arts (audition format TBC),329.0,
+LM028,387.0,,418.0,,Law,Criminal Justice,420.0,
+LM029,473.0,,490.0,,Law,Law Plus,530.0,
+LM038,478.0,,500.0,,Social and behavioural sciences,Psychology and Sociology,530.0,
+LM039,388.0,,402.0,,Journalism and information,Journalism and Digital Communication,432.0,
+LM040,350.0,,369.0,,Humanities (except languages),European Studies,409.0,
+LM044,404.0,,442.0,,Languages,Applied Languages,429.0,
+LM050,419.0,,431.0,,Business and administration,Business Studies (options),451.0,
+LM056,511.0,,528.0,,Business and administration,International Business,555.0,
+LM058,434.0,,403.0,,Mathematics and statistics,Financial Mathematics,468.0,
+LM063,372.0,,379.0,,Information and Communication Technologies (ICTs),Technology Management,410.0,
+LM068,400.0,,421.0,,Manufacturing and processing,Food Science and Health,464.0,
+LM076,402.0,,408.0,,Manufacturing and processing,Product Design and Technology (portfolio required),401.0,
+LM077,469.0,,520.0,,Engineering and engineering trades,Aeronautical Engineering,567.0,
+LM082,368.0,,398.0,,Manufacturing and processing,Construction Management and Engineering,446.0,
+LM089,441.0,,474.0,,Personal services,Sport and Exercise Sciences,498.0,
+LM090,498.0,,532.0,,Education,Physical Education with concurrent Teacher Educati,552.0,544.0
+LM092,478.0,,507.0,,Education,Science with Teacher Ed (Biology with Physics/Chem,521.0,
+LM093,338.0,,339.0,,Biological and related sciences,Equine Science,367.0,
+LM094,405.0,,440.0,,Education,Materials and Architectural Technology with concur,475.0,
+LM095,358.0,,367.0,,Education,Materials and Engineering Technology with concurre,425.0,
+LM096,382.0,,405.0,,Education,Science with Teacher Ed (Physical Sciences with Ch,454.0,
+LM099,419.0,,498.0,,Architecture and construction,Architecture,520.0,
+LM100,565.0,,589.0,,Health,Physiotherapy,613.0,
+LM102,495.0,,509.0,,Social and behavioural sciences,Psychology,534.0,
+LM103,313.0,,392.0,,Health,Paramedic Studies (Full B/Provisional C1 Drivers L,429.0,
+LM115,456.0,,454.0,,Physical sciences,Chemical and Biochemical Engineering,476.0,
+LM116,434.0,,476.0,,Engineering and engineering trades,Engineering (Biomedical/Civil/Design and Manufactu,498.0,
+LM118,401.0,,403.0,,Engineering and engineering trades,Electronic and Computer Engineering,445.0,
+LM121,352.0,,351.0,,Information and Communication Technologies (ICTs),Computer Science (Computer Systems/Games Dev/Cyber,402.0,
+LM123,412.0,,441.0,,Biological and related sciences,Biological and Chemical Sc. (Biosci/Envir Sci/Ind,498.0,
+LM124,427.0,,437.0,,Mathematics and statistics,Mathematics (Math Science/Maths and Physics/Econom,455.0,
+LM125,405.0,,404.0,,Physical sciences,Physics (Applied Physics or Mathematics and Physic,489.0,
+LM150,440.0,,475.0,,Health,General Nursing,498.0,487.0
+LM152,388.0,,419.0,,Health,Mental Health Nursing,478.0,466.0
+LM154,381.0,,420.0,,Health,Intellectual Disability Nursing,462.0,443.0
+LM156,429.0,,469.0,,Health,Midwifery,521.0,508.0
+MU001,290.0,,290.0,290.0,Interdisciplinary programmes and qualifications involving arts and humanities,Theology and Arts,294.0,294.0
+MH001,496.0,,507.0,,Education,Education - Primary Teaching (Froebel),564.0,
+MH101,316.0,,318.0,,Humanities (except languages),Arts,338.0,336.0
+MH106,495.0,,521.0,,Social and behavioural sciences,Psychology - 3 years,554.0,
+MH107,326.0,,346.0,,Social and behavioural sciences,Social Science,390.0,
+MH109,317.0,,316.0,,Arts,Media Studies,324.0,
+MH201,350.0,,360.0,,"Interdisciplinary programmes and qualifications involving natural sciences, Mathematics and statistics",Science,401.0,400.0
+MH202,429.0,,455.0,,Biological and related sciences,Biotechnology,490.0,489.0
+MH204,420.0,,422.0,,Physical sciences,Physics with Astrophysics,422.0,
+MH206,498.0,,510.0,,Mathematics and statistics,Theoretical Physics and Mathematics,521.0,
+MH207,434.0,,445.0,,Information and Communication Technologies (ICTs),Data Science,444.0,
+MH208,451.0,,498.0,,Biological and related sciences,Biological and Biomedical Sciences,543.0,
+MH209,473.0,,498.0,,Social and behavioural sciences,Psychology (through Science) - 4 years,529.0,
+MH210,446.0,,487.0,,Physical sciences,Pharmaceutical and Biomedical Chemistry,510.0,
+MH212,444.0,,422.0,,"Interdisciplinary programmes and qualifications involving natural sciences, Mathematics and statistics",Science|Maths and Computer Science|Mathematics (wi,452.0,443.0
+MH304,371.0,,333.0,333.0,Engineering and engineering trades,Engineering (Computer/Electronic/Communications),351.0,351.0
+MH305,358.0,,357.0,,Engineering and engineering trades,Product Design,326.0,
+MH306,361.0,,361.0,,Engineering and engineering trades,Robotics and Intelligent Devices,362.0,
+MH401,352.0,,357.0,,Business and administration,Finance (options),370.0,
+MH402,476.0,,476.0,,Business and administration,Quantitative Finance,476.0,
+MH403,402.0,,422.0,,Business and administration,Accounting and Finance,424.0,
+MH404,400.0,,430.0,,Business and administration,Business (options),441.0,
+MH407,401.0,,420.0,,Business and administration,Business and Accounting,423.0,
+MH411,358.0,,371.0,,Business and administration,Entrepreneurship,378.0,
+MH501,451.0,,473.0,,Law,LLB Law - four year Single Major Law programme,507.0,
+MH502,410.0,,451.0,,Law,Law (options),465.0,
+MH601,342.0,,352.0,,Information and Communication Technologies (ICTs),Computer Science through Arts (options),381.0,
+MH602,357.0,,351.0,,Information and Communication Technologies (ICTs),Computer Science through Science (options),400.0,
+MH603,520.0,,532.0,,Information and Communication Technologies (ICTs),Computational Thinking,520.0,
+AS001,456.0,,510.0,,Education,Education,,542.0
+AS002,400.0,,441.0,434.0,Education,Education,,464.0
+AS003,421.0,,440.0,440.0,Education,Education,,463.0
+AS051,337.0,,328.0,317.0,Business and administration,Nutrition,,378.0
+AS054,387.0,,408.0,398.0,Biological and related sciences,Home Economics,440.0,419.0
+AS110,391.0,,419.0,,Health,General Nursing,440.0,432.0
+AS130,317.0,,336.0,328.0,Health,Intellectual Disability Nursing,387.0,358.0
+SG141,252.0,,261.0,,Business and administration,Business,262.0,
+SG146,307.0,,309.0,,Business and administration,Accounting,304.0,
+SG147,269.0,,307.0,,Personal services,Sport with Business,288.0,
+SG148,246.0,,269.0,,Personal services,Tourism with Event Management,298.0,
+SG241,279.0,,328.0,,Arts,Performing Arts,341.0,
+SG242,278.0,,279.0,,Welfare,Early Childhood Care and Education,287.0,
+SG243,297.0,,301.0,,Welfare,Social Care Practice,309.0,
+SG244,355.0,,505.0,,Arts,Fine Art,501.0,
+SG245,261.0,,282.0,,Arts,Creative Design,332.0,
+SG246,295.0,,290.0,,Information and Communication Technologies (ICTs),Computing,316.0,
+SG247,308.0,,309.0,,Social and behavioural sciences,English and Psychology,319.0,
+SG248,282.0,,281.0,,Social and behavioural sciences,Sociology and Politics,298.0,
+SG249,279.0,,297.0,,Languages,Writing and Literature,308.0,
+SG252,300.0,,307.0,,Information and Communication Technologies (ICTs),Software Development,310.0,
+SG253,273.0,,324.0,,Information and Communication Technologies (ICTs),Computing in Computer Networks and Cyber Security,336.0,
+SG343,261.0,,311.0,,Architecture and construction,Quantity Surveying,300.0,
+SG346,289.0,,291.0,,Architecture and construction,Construction Project Management and Applied Techno,313.0,
+SG347,309.0,,360.0,,Architecture and construction,Architecture,403.0,
+SG442,289.0,,290.0,,Hygiene and occupational health services,Occupational Safety and Health,307.0,
+SG443,357.0,,356.0,,Health,Human Nutrition,376.0,
+SG444,308.0,,338.0,,Biological and related sciences,Science Undenominated,358.0,
+SG445,347.0,,311.0,,Physical sciences,Pharmaceutical Science with Drug Development,357.0,
+SG447,316.0,,328.0,,Health,Health Science and Physical Activity,326.0,
+SG448,306.0,,306.0,,Biological and related sciences,Forensic Investigation and Analysis,308.0,
+SG449,329.0,,341.0,,Health,Medical Biotechnology,315.0,
+TL801,281.0,,281.0,,Arts,Animation,,718.0
+TL802,306.0,,325.0,,Arts,TV,8.0,322.0
+TL810,309.0,,310.0,,Information and Communication Technologies (ICTs),Computing with Software Development,308.0,
+TL811,310.0,,358.0,,Information and Communication Technologies (ICTs),Computing with Games Development,322.0,
+TL815,308.0,,308.0,,Information and Communication Technologies (ICTs),Computing (Degree Award options),307.0,
+TL823,291.0,,299.0,,Personal services,Event Management (3 year programme),293.0,
+TL831,307.0,,306.0,,Business and administration,Business Studies (Major Specialism in: Acctng or M,306.0,
+TL844,311.0,,300.0,,"Interdisciplinary programmes and qualifications involving agriculture, forestry and veterinary",Agricultural Engineering,301.0,
+TL845,300.0,,325.0,,Architecture and construction,Civil Engineering,361.0,
+TL847,,,302.0,,Manufacturing and processing,Manufacturing Engineering,305.0,
+TL848,331.0,,308.0,,"Interdisciplinary programmes and qualifications involving agriculture, forestry and veterinary",Agricultural Science,307.0,
+TL851,310.0,,309.0,,Environment,Wildlife Biology (Degree Award options),309.0,
+TL855,342.0,,317.0,,Health,Pharmaceutical Science (Degree Award options),316.0,
+TL858,326.0,,308.0,,Veterinary,Veterinary Bioscience,317.0,
+TL871,303.0,,300.0,,Personal services,Health and Leisure (Degree Award options),303.0,
+TL872,288.0,,309.0,,Personal services,Health and Leisure with Massage,314.0,
+TL873,282.0,,289.0,,Personal services,Coaching and Sports Performance,308.0,
+TL880,307.0,,307.0,,Welfare,Early Childhood Care and Education,309.0,
+TL890,407.0,,440.0,414.0,Health,General Nursing and Mature Applicants,463.0,
+TL891,367.0,,389.0,378.0,Health,Mental Health Nursing and Mature Applicants,440.0,419.0
+WD001,279.0,,260.0,260.0,Information and Communication Technologies (ICTs),Applied Computing (options),270.0,261.0
+WD002,302.0,,308.0,,Physical sciences,Science (options),279.0,
+WD005,288.0,,280.0,,Health,Health Sciences (options),271.0,
+WD006,282.0,,280.0,,Personal services,Exercise Sciences (options),270.0,
+WD007,287.0,,288.0,288.0,Engineering and engineering trades,Engineering (options),270.0,270.0
+WD025,269.0,,269.0,,Architecture and construction,Construction Management and Engineering,262.0,
+WD027,290.0,,262.0,,Arts,Music,321.0,
+WD048,278.0,,271.0,,Business and administration,Business (options),279.0,
+WD084,307.0,,308.0,,Business and administration,Accounting,308.0,
+WD091,210.0,,228.0,,Personal services,Hospitality Management,225.0,
+WD116,413.0,,422.0,,Health,General Nursing,446.0,
+WD117,361.0,,366.0,,Health,Psychiatric Nursing,415.0,
+WD120,338.0,,377.0,,Health,Intellectual Disability Nursing,390.0,
+WD134,289.0,,290.0,,Business and administration,International Business,267.0,
+WD137,253.0,,271.0,,Arts,Design (Visual Communications),252.0,
+WD140,290.0,,280.0,,Law,Laws,280.0,
+WD144,283.0,,284.0,,Architecture and construction,Architecture,309.0,
+WD147,298.0,,293.0,,Physical sciences,Pharmaceutical Science,288.0,
+WD150,271.0,,270.0,,Law,Criminal Justice Studies,280.0,
+WD152,253.0,,,,Arts,Visual Art,243.0,
+WD161,262.0,,255.0,,Information and Communication Technologies (ICTs),Computer Forensics and Security,270.0,
+WD162,260.0,,216.0,,Architecture and construction,Quantity Surveying,226.0,
+WD163,390.0,,434.0,,Social and behavioural sciences,Psychology,456.0,
+WD186,276.0,,270.0,,Personal services,Sports Coaching and Performance,261.0,
+WD187,271.0,,272.0,,Welfare,Social Science,276.0,
+WD191,378.0,,377.0,,Agriculture,Agricultural Science,377.0,
+WD192,279.0,,270.0,,Welfare,Social Care Practice,271.0,
+WD193,290.0,,271.0,,Business and administration,Marketing and Digital Media,279.0,
+WD194,235.0,,217.0,,Personal services,Culinary Arts,237.0,
+WD195,266.0,,279.0,,Architecture and construction,Architectural and Building Information Modelling T,279.0,
+WD200,221.0,,,,Arts,Arts (options),201.0,201.0
+WD210,271.0,,279.0,,Information and Communication Technologies (ICTs),Software Systems Development,260.0,
+WD211,275.0,,271.0,,Information and Communication Technologies (ICTs),Creative Computing,270.0,
+WD212,274.0,,270.0,,Personal services,Recreation and Sport Management,262.0,
+WD230,273.0,,253.0,,Engineering and engineering trades,Mechanical and Manufacturing Engineering,230.0,230.0
