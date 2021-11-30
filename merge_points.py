@@ -30,7 +30,7 @@ merge_points_2.to_csv(csvfilepath, encoding = 'utf-8', index = False)
 
 artsCourses = merge_points_2[merge_points_2['Course Category'] == "Arts"]
 
-artsMelt = artsCourses.melt(id_vars = "Course_Code", value_vars = ["R1_Points20", "R1_Points19", "R1_Points21"], var_name = "Year")
-print(artsMelt)
+courseMelt = merge_points_2.melt(id_vars = ["Course_Code", "Course Category"], value_vars = ["R1_Points20", "R1_Points19", "R1_Points21"], var_name = "Year")
+print(courseMelt)
 
-print(artsMelt.groupby(["Year"]).median())
+print(courseMelt.groupby(["Course Category", "Year"]).mean())
