@@ -33,4 +33,12 @@ artsCourses = merge_points_2[merge_points_2['Course Category'] == "Arts"]
 courseMelt = merge_points_2.melt(id_vars = ["Course_Code", "Course Category"], value_vars = ["R1_Points20", "R1_Points19", "R1_Points21"], var_name = "Year")
 print(courseMelt)
 
-print(courseMelt.groupby(["Course Category", "Year"]).mean())
+points_19 = courseMelt[courseMelt["Year"] == "R1_Points19"]
+points_20 = courseMelt[courseMelt["Year"] == "R1_Points20"]
+points_21 = courseMelt[courseMelt["Year"] == "R1_Points21"]
+
+counts = points_20.groupby("Course Category", sort = False).count()
+counts.sort_index(ascending = False)
+print(counts)
+
+counts2 = points_20["Course Category"].value_counts(ascending = False).rename_axis("Course Category").reset_index(name = "Count")
