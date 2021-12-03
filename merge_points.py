@@ -5,6 +5,9 @@ import os
 import datetime as dt
 import matplotlib.pyplot as plt
 import seaborn as sns
+from matplotlib import rcParams
+
+from matplotlib import rcParams
 
 timenow = dt.datetime.now()
 nowstrng = timenow.strftime('%Y%m%d_%H%M%S')
@@ -30,15 +33,19 @@ merge_points_2.to_csv(csvfilepath, encoding = 'utf-8', index = False)
 
 artsCourses = merge_points_2[merge_points_2['Course Category'] == "Arts"]
 
-courseMelt = merge_points_2.melt(id_vars = ["Course_Code", "Course Category"], value_vars = ["R1_Points20", "R1_Points19", "R1_Points21"], var_name = "Year")
-print(courseMelt)
+courseMelt = merge_points_2.melt(id_vars = ["Course_Code", "Course Category", "Course_Name"], value_vars = ["R1_Points20", "R1_Points19", "R1_Points21"], var_name = "Year")
+
 
 points_19 = courseMelt[courseMelt["Year"] == "R1_Points19"]
 points_20 = courseMelt[courseMelt["Year"] == "R1_Points20"]
 points_21 = courseMelt[courseMelt["Year"] == "R1_Points21"]
 
-counts = points_20.groupby("Course Category", sort = False).count()
-counts.sort_index(ascending = False)
-print(counts)
 
-counts2 = points_20["Course Category"].value_counts(ascending = False).rename_axis("Course Category").reset_index(name = "Count")
+courses_grouped = points2020[["Course_Code","CATEGORY (i.e.ISCED description)" ]].groupby("CATEGORY (i.e.ISCED description)").agg({"CATEGORY (i.e.ISCED description)": "size"})
+popular_categories = courses_grouped.nlargest(5, "CATEGORY (i.e.ISCED description)").plot(kind = "bar")
+plt.xticks(fontsize = 8, rotation = 360)
+plt.tight_layout()
+L = plt.legend()
+L.get_texts()[0].set_text('Total Courses')
+plt.show()
+
