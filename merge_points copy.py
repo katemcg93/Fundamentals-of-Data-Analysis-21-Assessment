@@ -28,25 +28,16 @@ merge_points_2 = merge_points_2.rename(columns = {"CATEGORY (i.e.ISCED descripti
 merge_points_2 = merge_points_2.drop(columns = ["Course Name_x", "Course Name_y"])
 
 print(merge_points_2.describe())
-
-merge_points_2.to_csv(csvfilepath, encoding = 'utf-8', index = False)
-
-artsCourses = merge_points_2[merge_points_2['Course Category'] == "Arts"]
-
-courseMelt = merge_points_2.melt(id_vars = ["Course_Code", "Course_Name"], value_vars = ["Course Category","R1_Points20", "R1_Points19", "R1_Points21"], var_name = "Year")
-
-
-points_19 = courseMelt[courseMelt["Year"] == "R1_Points19"]
-points_20 = courseMelt[courseMelt["Year"] == "R1_Points20"]
-points_21 = courseMelt[courseMelt["Year"] == "R1_Points21"]
-
-
-courses_grouped = points2020[["Course_Code","CATEGORY (i.e.ISCED description)" ]].groupby("CATEGORY (i.e.ISCED description)").agg({"CATEGORY (i.e.ISCED description)": "size"})
-popular_categories = courses_grouped.nlargest(5, "CATEGORY (i.e.ISCED description)").plot(kind = "bar")
-plt.xticks(fontsize = 8, rotation = 360)
+fig, ax = plt.subplots(figsize=(14,10))
+ha = ['right', 'center', 'left']
+merge_points_2["Total Courses"] = 1
+course_categories = merge_points_2.groupby(["Course Category"])["Total Courses"].count()
+course_df = pd.DataFrame(course_categories, columns = ["Total Courses"])
+sorted_courses = course_df.sort_values(by = ["Total Courses"], ascending = False)
+top_10_courses = sorted_courses.head(n = 10).plot(ax = ax, kind = "bar")
+xlabels = ax.get_xticklabels()
+ax.set_xticklabels(xlabels, rotation=45, ha='right', rotation_mode='anchor')
+ax.spines['right'].set_visible(False)
+ax.spines['top'].set_visible(False)
 plt.tight_layout()
-L = plt.legend()
-L.get_texts()[0].set_text('Total Courses')
 plt.show()
-plt.close()
-
