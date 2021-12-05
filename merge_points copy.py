@@ -40,4 +40,31 @@ ax.set_xticklabels(xlabels, rotation=45, ha='right', rotation_mode='anchor')
 ax.spines['right'].set_visible(False)
 ax.spines['top'].set_visible(False)
 plt.tight_layout()
+plt.close()
+
+top_5_courses = sorted_courses.head(n = 5)
+top_5_list = top_5_courses.index.tolist()
+
+top_5_filter = merge_points_2["Course Category"].isin(top_5_list)
+
+top_5_df = merge_points_2[top_5_filter]
+print(top_5_df.describe())
+
+
+fig, (ax1, ax2, ax3) = plt.subplots(3)
+plt.suptitle("Points Distribution for Top 5 Course Categories: 2019 - 2021")
+sns.violinplot(ax = ax1, data = top_5_df, y = "R1_Points19", x = "Course Category",  hue = "Course Category", palette = "coolwarm", scale = "width")
+sns.violinplot(ax = ax2, data = top_5_df, y = "R1_Points20", x = "Course Category",  hue = "Course Category", palette = "coolwarm", scale = "width")
+sns.violinplot(ax = ax3, data = top_5_df, y = "R1_Points21", x = "Course Category",  hue = "Course Category", palette = "coolwarm", scale = "width")
+ax1.legend(loc='upper center', bbox_to_anchor=(0.5, 1.05), ncol=2, fancybox=True, fontsize = 'x-small', prop={'size':8})
+ax2.get_legend().remove()
+ax3.get_legend().remove()
+plt.setp(ax1, xticks=[])
+plt.setp(ax2, xticks=[])
+plt.setp(ax3, xticks=[])
+fig.set_size_inches(32, 18)
+plt.savefig("course_categories_by_year.png", bbox_inches = 'tight', dpi = 300)
 plt.show()
+plt.close()
+
+
