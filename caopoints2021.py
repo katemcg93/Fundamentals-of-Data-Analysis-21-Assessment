@@ -40,27 +40,32 @@ resp.encoding = 'cp1252'
 with open(filepath, "w") as f:
     f.write(resp.text)
 
-#r character means that text will be treated as raw string, and / or * characters will be interpreted as part of string
-# Brackets are dividing the text into the sections we're looking for - 
-    # course code (2 letters + 3 digits)
-    # course name (string of undefined length)
-    # R1 points (3 digits)
-    # R2 points if present
-    # The * at end allows for whitespace
-coursematch = re.compile(r'([A-Z]{2}[0-9]{3})  (.*)([0-9]{3})(\*?) *')
+
+coursematch = re.compile(r'([A-Z]{2}[0-9]{3})(.*)')
 
 total_lines  = 0
 
 with open (csvfilepath,"w") as f:
     for line in  resp.iter_lines ():
         dline = line.decode('cp1252')
-        re.sub(' +', " ", dline)
-        re.sub(",", " ", dline)
         if coursematch.fullmatch(dline):
+            # Add one to the lines counter.
             total_lines = total_lines + 1
-            linesplit = re.split('  +', dline)
+            # The course code.
+            course_code = dline[:5]
+            # The course title.
+            course_title = dline[7:57].strip()
+            # Round one points.
+            course_points = re.split(' +', dline[60:])
+            if len(course_points) != 2:
+                course_points = course_points[:2]
+            # Join the fields using a comma.
+            linesplit = [course_code, course_title, course_points[0], course_points[1]]
+            # Rejoin the substrings with commas in between.
             f.write(','.join(linesplit) + '\n')
 
+# Print the total number of processed lines.
+print(f"Total number of lines is {total_lines}.")
 
 headers = ["Course_Code", "Course_Name", "R1_Points21", "R2_Points21"]
 

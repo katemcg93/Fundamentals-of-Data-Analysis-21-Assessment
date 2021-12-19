@@ -54,5 +54,3 @@ points2019[["R1_Points19"]] = points2019[["R1_Points19"]].apply(pd.to_numeric, d
 points2019[["R2_Points19"]] = points2019[["R2_Points19"]].apply(pd.to_numeric, downcast = 'integer')
 
 
-   
-
