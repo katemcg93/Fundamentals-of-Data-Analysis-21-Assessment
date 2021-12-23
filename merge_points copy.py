@@ -64,8 +64,10 @@ merge_points_2 = pd.merge(merge_points_1, pointsData21, on = 'Course_Code')
 merge_points_2 = merge_points_2.rename(columns = {"CATEGORY (i.e.ISCED description)" : "Course Category"})
 merge_points_2 = merge_points_2.drop(columns = ["Course Name_x", "Course Name_y"])
 
-college_df = merge_points_2.groupby ("HEI")["R1_Points19"].mean()
-print(college_df)
+university_df = merge_points_2[merge_points_2["HEI"].isin(["Dublin City University", "Maynooth University", "Trinity College Dublin", "University College Cork (NUI)", "University College Dublin (NUI)", "University of Limerick"])]
+university_points = university_df.groupby ("HEI")["R1_Points19"].mean().plot(kind = "bar")
+plt.show()
+plt.close()
 
 pointsonly = merge_points_2[["R1_Points19", "R1_Points20", "R1_Points21"]]
 
