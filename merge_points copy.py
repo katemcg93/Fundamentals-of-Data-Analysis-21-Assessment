@@ -10,6 +10,8 @@ import seaborn as sns
 from matplotlib import rcParams
 from scipy import stats
 
+plt.style.use('seaborn-pastel')
+
 np.set_printoptions(precision = 2)
 
 timenow = dt.datetime.now()
@@ -64,24 +66,42 @@ merge_points_2 = pd.merge(merge_points_1, pointsData21, on = 'Course_Code')
 merge_points_2 = merge_points_2.rename(columns = {"CATEGORY (i.e.ISCED description)" : "Course Category"})
 merge_points_2 = merge_points_2.drop(columns = ["Course Name_x", "Course Name_y"])
 
-university_df = merge_points_2[merge_points_2["HEI"].isin(["Dublin City University", "Maynooth University", "Trinity College Dublin", "University College Cork (NUI)", "University College Dublin (NUI)", "University of Limerick"])]
-university_points = university_df.groupby ("HEI")["R1_Points19"].mean().plot(kind = "bar")
+university_df = merge_points_2[merge_points_2["HEI"].isin(["Dublin City University", "Maynooth University", "Trinity College Dublin", "University College Cork (NUI)", "University College Dublin (NUI)", "University of Limerick", 'National University of Ireland, Galway'])]
+university_melt = university_df.melt(id_vars = "HEI", value_vars= ["R1_Points19", "R1_Points20", "R1_Points21"])
+
+fig, ax = plt.subplots()
+sns.barplot(data = university_melt, x = "HEI", y = "value", hue = "variable")
+xlabels = ["UCC", "DCU", "TCD", "UCD", "NUIG", "UL", "NUIM"]
+ax.set_xticklabels(labels = xlabels, rotation=45, ha='right', rotation_mode='anchor')
+plt.tight_layout()
 plt.show()
 plt.close()
 
-pointsonly = merge_points_2[["R1_Points19", "R1_Points20", "R1_Points21"]]
+it_df = merge_points_2[merge_points_2["HEI"].isin(["Athlone Institute of Technology", "Cork Institute of Technology", "Galway-Mayo Institute of Technology", "Institute of Technology, Sligo", "Institute of Technology, Tralee", "Waterford Institute of Technology"])]
+it_melt = it_df.melt(id_vars = "HEI", value_vars= ["R1_Points19", "R1_Points20", "R1_Points21"])
 
+fig, ax = plt.subplots()
+sns.barplot(data = it_melt, x = "HEI", y = "value", hue = "variable")
+xlabels = ["Athlone IT", "CIT", "GMIT", "IT Sligo", "IT Tralee", "WIT"]
+ax.set_xticklabels (labels = xlabels, rotation=45, ha='right', rotation_mode='anchor')
+plt.tight_layout()
+plt.show()
+plt.close()
+
+
+pointsonly = merge_points_2[["R1_Points19", "R1_Points20", "R1_Points21"]]
 
 sns.boxplot(data = pointsonly, palette = "coolwarm")
 plt.show()
 
 fig, ax = plt.subplots(figsize=(14,10))
+
 ha = ['right', 'center', 'left']
 merge_points_2["Total Courses"] = 1
 course_categories = merge_points_2.groupby(["Course Category"])["Total Courses"].count()
 course_df = pd.DataFrame(course_categories, columns = ["Total Courses"])
 sorted_courses = course_df.sort_values(by = ["Total Courses"], ascending = False)
-top_10_courses = sorted_courses.head(n = 10).plot(ax = ax, kind = "bar", color = "#74B3CE")
+top_10_courses = sorted_courses.head(n = 10).plot(ax = ax, kind = "bar")
 xlabels = ax.get_xticklabels()
 ax.set_xticklabels(xlabels, rotation=45, ha='right', rotation_mode='anchor')
 ax.spines['right'].set_visible(False)
@@ -94,25 +114,14 @@ plt.close()
 
 top_5_courses = sorted_courses.head(n = 5)
 top_5_list = top_5_courses.index.tolist()
-
 top_5_filter = merge_points_2["Course Category"].isin(top_5_list)
-
 top_5_df = merge_points_2[top_5_filter]
 
-fig, (ax1, ax2, ax3) = plt.subplots(3)
-plt.suptitle("Points Distribution for Top 5 Course Categories: 2019 - 2021")
-sns.violinplot(ax = ax1, data = top_5_df, y = "R1_Points19", x = "Course Category",  hue = "Course Category", palette = "coolwarm", scale = "width")
-sns.violinplot(ax = ax2, data = top_5_df, y = "R1_Points20", x = "Course Category",  hue = "Course Category", palette = "coolwarm", scale = "width")
-sns.violinplot(ax = ax3, data = top_5_df, y = "R1_Points21", x = "Course Category",  hue = "Course Category", palette = "coolwarm", scale = "width")
-ax1.legend(loc='upper center', bbox_to_anchor=(0.5, 1.05), ncol=2, fancybox=True, fontsize = 'large', prop={'size':12})
-ax2.get_legend().remove()
-ax3.get_legend().remove()
-plt.setp(ax1, xticks=[])
-plt.setp(ax2, xticks=[])
-plt.setp(ax3, xticks=[])
-fig.set_size_inches(32, 18)
-plt.savefig("course_categories_by_year.png", bbox_inches = 'tight', dpi = 300)
+fig, ax = plt.subplots()
+top_5_melt = top_5_df.melt(id_vars = ["Course Category"], value_vars= ["R1_Points19", "R1_Points20", "R1_Points21"])
+sns.violinplot(data = top_5_melt, y = "value", x = "Course Category", hue = "variable")
+xlabels =["ICT", "Health", "Business", "Arts", "Engineering"]
+ax.set_xticklabels(xlabels, rotation=45, ha='right', rotation_mode='anchor')
+plt.tight_layout()
 plt.show()
 plt.close()
-
-
