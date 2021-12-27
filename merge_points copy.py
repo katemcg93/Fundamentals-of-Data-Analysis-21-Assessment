@@ -65,6 +65,7 @@ merge_points_1 = pd.merge(points2019, points2020, on = 'Course_Code')
 merge_points_2 = pd.merge(merge_points_1, pointsData21, on = 'Course_Code')
 merge_points_2 = merge_points_2.rename(columns = {"CATEGORY (i.e.ISCED description)" : "Course Category"})
 merge_points_2 = merge_points_2.drop(columns = ["Course Name_x", "Course Name_y"])
+print(merge_points_2.columns)
 
 university_df = merge_points_2[merge_points_2["HEI"].isin(["Dublin City University", "Maynooth University", "Trinity College Dublin", "University College Cork (NUI)", "University College Dublin (NUI)", "University of Limerick", 'National University of Ireland, Galway'])]
 university_melt = university_df.melt(id_vars = "HEI", value_vars= ["R1_Points19", "R1_Points20", "R1_Points21"])
@@ -125,3 +126,35 @@ ax.set_xticklabels(xlabels, rotation=45, ha='right', rotation_mode='anchor')
 plt.tight_layout()
 plt.show()
 plt.close()
+
+
+def course_trends2(df, col, yr):
+
+    pd.set_option('display.max_columns', 500)
+
+    points_df =  df.sort_values(col, ascending = False).head(10)
+    with pd.option_context('expand_frame_repr', False):
+        print("\n")
+        print("Top Courses : {}".format(yr))
+        print("\n")
+        print(points_df[["Course_Code", "Course_Name", col]])
+
+
+course_trends2(df = merge_points_2, col = "R1_Points19", yr = "2019")
+course_trends2(df = merge_points_2, col = "R1_Points20", yr = "2020")
+course_trends2(df = merge_points_2, col = "R1_Points21", yr = "2021")
+
+exclude_arts = merge_points_2[merge_points_2["Course Category"]!= "Arts"]
+exclude_arts_portfolio = exclude_arts[exclude_arts["R1_Points19"] <=625]
+
+
+course_trends2(df = exclude_arts, col = "R1_Points19", yr = "2019")
+course_trends2(df = exclude_arts, col = "R1_Points20", yr = "2020")
+course_trends2(df = exclude_arts, col = "R1_Points21", yr = "2021")
+
+
+course_trends2(df = exclude_arts_portfolio, col = "R1_Points19", yr = "2019")
+course_trends2(df = exclude_arts_portfolio, col = "R1_Points20", yr = "2020")
+course_trends2(df = exclude_arts_portfolio, col = "R1_Points21", yr = "2021")
+
+
