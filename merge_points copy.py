@@ -138,6 +138,8 @@ def course_trends2(df, col, yr):
         print("Top Courses : {}".format(yr))
         print("\n")
         print(points_df[["Course_Code", "Course_Name", col]])
+    
+    return points_df
 
 
 course_trends2(df = merge_points_2, col = "R1_Points19", yr = "2019")
@@ -153,8 +155,16 @@ course_trends2(df = exclude_arts, col = "R1_Points20", yr = "2020")
 course_trends2(df = exclude_arts, col = "R1_Points21", yr = "2021")
 
 
-course_trends2(df = exclude_arts_portfolio, col = "R1_Points19", yr = "2019")
-course_trends2(df = exclude_arts_portfolio, col = "R1_Points20", yr = "2020")
-course_trends2(df = exclude_arts_portfolio, col = "R1_Points21", yr = "2021")
+top_10_2019 = course_trends2(df = exclude_arts_portfolio, col = "R1_Points19", yr = "2019")
+top_10_2020 = course_trends2(df = exclude_arts_portfolio, col = "R1_Points20", yr = "2020")
+top_10_2021 = course_trends2(df = exclude_arts_portfolio, col = "R1_Points21", yr = "2021")
 
-
+top_2019_melt = top_10_2019.melt(id_vars = "Course_Name", value_vars= ["R1_Points19", "R1_Points20", "R1_Points21"])
+sns.set_style("whitegrid")
+fig, ax = plt.subplots()
+fig.set_size_inches(8, 6)
+sns.lineplot(data = top_2019_melt, x= "variable", y = "value", hue = "Course_Name", style="Course_Name", palette = "deep", linewidth = 3)
+plt.legend(fontsize = "small")
+plt.savefig("Top_points_2019.png", dpi = 100)
+plt.show()
+plt.close()
