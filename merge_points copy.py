@@ -43,23 +43,29 @@ ax2.legend(lines + lines2 + lines3, labels + labels2 + labels3, loc=0)
 plt.show()
 plt.close()
 
-def descriptiveStats (x):
+def descriptiveStats (x, yr, r):
     np.set_printoptions(precision = 2)
     mean = np.mean(x)
     std = np.std(x)
     median = x.median()
     mode = x.mode().values[0].tolist()
     output = """
-    Mean Points Value :  {0}
-    Standard Deviation : {1}
-    median : {2}
-    mode : {3}
-    """.format(round(mean,2), round(std, 2), median, mode)
+    Year: {0}
+    Points Round: {1}
+    Mean Points Value :  {2}
+    Standard Deviation : {3}
+    Median : {4}
+    Mode : {5}
+    """.format(yr, r, round(mean,2), round(std, 2), median, mode)
     print(output)
 
-descriptiveStats(x = points2019["R1_Points19"])
-descriptiveStats(x = points2020["R1_Points20"])
-descriptiveStats(x = pointsData21["R1_Points21"])
+descriptiveStats(x = points2019["R1_Points19"], yr = "2019", r = "1")
+descriptiveStats(x = points2020["R1_Points20"], yr = "2020", r = "1")
+descriptiveStats(x = pointsData21["R1_Points21"], yr = "2021", r = "1")
+
+descriptiveStats(x = points2019["R2_Points19"], yr = "2019", r = "2")
+descriptiveStats(x = points2020["R2_Points20"], yr = "2020", r = "2")
+descriptiveStats(x = pointsData21["R2_Points21"], yr = "2021", r = "2")
 
 merge_points_1 = pd.merge(points2019, points2020, on = 'Course_Code')
 merge_points_2 = pd.merge(merge_points_1, pointsData21, on = 'Course_Code')
@@ -127,12 +133,21 @@ plt.tight_layout()
 plt.show()
 plt.close()
 
+fig, ax = plt.subplots()
+top_5_melt = top_5_df.melt(id_vars = ["Course Category"], value_vars= ["R2_Points19", "R2_Points20", "R2_Points21"])
+sns.violinplot(data = top_5_melt, y = "value", x = "Course Category", hue = "variable")
+xlabels =["ICT", "Health", "Business", "Arts", "Engineering"]
+ax.set_xticklabels(xlabels, rotation=45, ha='right', rotation_mode='anchor')
+plt.tight_layout()
+plt.show()
+plt.close()
 
-def course_trends2(df, col, yr):
+
+def course_trends2(df, col, yr, highlow):
 
     pd.set_option('display.max_columns', 500)
 
-    points_df =  df.sort_values(col, ascending = False).head(10)
+    points_df =  df.sort_values(col, ascending = highlow).head(10)
     with pd.option_context('expand_frame_repr', False):
         print("\n")
         print("Top Courses : {}".format(yr))
@@ -142,29 +157,40 @@ def course_trends2(df, col, yr):
     return points_df
 
 
-course_trends2(df = merge_points_2, col = "R1_Points19", yr = "2019")
-course_trends2(df = merge_points_2, col = "R1_Points20", yr = "2020")
-course_trends2(df = merge_points_2, col = "R1_Points21", yr = "2021")
+course_trends2(df = merge_points_2, col = "R1_Points19", yr = "2019", highlow = False)
+course_trends2(df = merge_points_2, col = "R1_Points20", yr = "2020", highlow = False)
+course_trends2(df = merge_points_2, col = "R1_Points21", yr = "2021", highlow = False)
 
 exclude_arts = merge_points_2[merge_points_2["Course Category"]!= "Arts"]
 exclude_arts_portfolio = exclude_arts[exclude_arts["R1_Points19"] <=625]
 
 
-course_trends2(df = exclude_arts, col = "R1_Points19", yr = "2019")
-course_trends2(df = exclude_arts, col = "R1_Points20", yr = "2020")
-course_trends2(df = exclude_arts, col = "R1_Points21", yr = "2021")
+course_trends2(df = exclude_arts, col = "R1_Points19", yr = "2019", highlow = False)
+course_trends2(df = exclude_arts, col = "R1_Points20", yr = "2020", highlow = False)
+course_trends2(df = exclude_arts, col = "R1_Points21", yr = "2021", highlow = False)
 
 
-top_10_2019 = course_trends2(df = exclude_arts_portfolio, col = "R1_Points19", yr = "2019")
-top_10_2020 = course_trends2(df = exclude_arts_portfolio, col = "R1_Points20", yr = "2020")
-top_10_2021 = course_trends2(df = exclude_arts_portfolio, col = "R1_Points21", yr = "2021")
+top_10_2019 = course_trends2(df = exclude_arts_portfolio, col = "R1_Points19", yr = "2019", highlow = False)
+top_10_2020 = course_trends2(df = exclude_arts_portfolio, col = "R1_Points20", yr = "2020", highlow = False)
+top_10_2021 = course_trends2(df = exclude_arts_portfolio, col = "R1_Points21", yr = "2021", highlow = False)
 
-top_2019_melt = top_10_2019.melt(id_vars = "Course_Name", value_vars= ["R1_Points19", "R1_Points20", "R1_Points21"])
-sns.set_style("whitegrid")
-fig, ax = plt.subplots()
-fig.set_size_inches(8, 6)
-sns.lineplot(data = top_2019_melt, x= "variable", y = "value", hue = "Course_Name", style="Course_Name", palette = "deep", linewidth = 3)
-plt.legend(fontsize = "small")
-plt.savefig("Top_points_2019.png", dpi = 100)
-plt.show()
-plt.close()
+exclude_med = merge_points_2[~merge_points_2["Course_Name"].str.contains("Medicine")]
+
+bottom_10_2019 = course_trends2(df = exclude_med, col = "R1_Points19", yr = "2019", highlow = True)
+bottom_10_2020 = course_trends2(df = exclude_med, col = "R1_Points20", yr = "2020", highlow = True)
+bottom_10_2021 = course_trends2(df = exclude_med, col = "R1_Points21", yr = "2021", highlow = True)
+
+
+def course_plot(df, x):
+    top_2019_melt = df.melt(id_vars = "Course_Name", value_vars= ["R1_Points19", "R1_Points20", "R1_Points21"])
+    sns.set_style("whitegrid")
+    fig, ax = plt.subplots()
+    fig.set_size_inches(8, 6)
+    sns.lineplot(data = top_2019_melt, x= "variable", y = "value", hue = "Course_Name", style="Course_Name", palette = "deep", linewidth = 3)
+    plt.legend(fontsize = "small")
+    plt.savefig("{}.png".format(x), dpi = 100)
+    plt.show()
+    plt.close()
+
+course_plot(df = top_10_2019, x = "top10points")
+course_plot(df = bottom_10_2019, x = "bottom10points")
