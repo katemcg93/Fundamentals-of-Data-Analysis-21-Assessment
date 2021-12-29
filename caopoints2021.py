@@ -1,11 +1,13 @@
 import re
+import urllib
 import requests as rq
-import csv
 import datetime as dt
 import os
 import pandas as pd
+import urllib3
 import urllib
-from urllib.request import urlretrieve
+from urllib.request import urlopen
+
 
 #Getting current date and time so unique, up to date version of site is saved each time code is run
 #Note that underscores are being used instead of slashes, as slashes will cause issues when generating the file path
@@ -22,6 +24,10 @@ currentpath = os.getcwd()
 
 #Getting data from CAO site
 resp = rq.get('http://www2.cao.ie/points/l8.php')
+
+response = urlopen('http://www2.cao.ie/points/l8.php')
+charset = response.headers.get_content_charset()
+print(charset)
 
 
 #Constructing filepath
@@ -41,8 +47,12 @@ with open(filepath, "w") as f:
     f.write(resp.text)
 
 
+#Regex Statement to identify lines containing course data
+#First section finds corse code - 1 letter and three numbers
+#Next section retrieves all other info - course name, points etc
 coursematch = re.compile(r'([A-Z]{2}[0-9]{3})(.*)')
 
+#Check to ensure all lines are processed
 total_lines  = 0
 
 with open (csvfilepath,"w") as f:
@@ -53,10 +63,13 @@ with open (csvfilepath,"w") as f:
             total_lines = total_lines + 1
             # The course code.
             course_code = dline[:5]
-            # The course title.
+            # The course title - char 7 is the start of the title section, char 57 is where the longest title ends
+            # strip is to remove white space at the beginning and end of each line
             course_title = dline[7:57].strip()
             # Round one points.
             course_points = re.split(' +', dline[60:])
+
+            #Splitting points into round one and two, where r2 points exist
             if len(course_points) != 2:
                 course_points = course_points[:2]
             # Join the fields using a comma.
@@ -80,6 +93,7 @@ pointsData21['R1_Points21'] = pointsData21['R1_Points21'].str.replace(r'[a-zA-Z]
 pointsData21['R2_Points21'] = pointsData21['R2_Points21'].str.replace(r'[a-zA-Z]+', '', regex = True)
 
 
+#Changing points columns to numeric
 pointsData21[["R1_Points21"]] = pointsData21[["R1_Points21"]].apply(pd.to_numeric, downcast = 'integer')
 pointsData21[["R2_Points21"]] = pointsData21[["R2_Points21"]].apply(pd.to_numeric, downcast = 'integer')
 

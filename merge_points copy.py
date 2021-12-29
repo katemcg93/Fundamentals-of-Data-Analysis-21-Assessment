@@ -77,7 +77,7 @@ university_df = merge_points_2[merge_points_2["HEI"].isin(["Dublin City Universi
 university_melt = university_df.melt(id_vars = "HEI", value_vars= ["R1_Points19", "R1_Points20", "R1_Points21"])
 
 fig, ax = plt.subplots()
-sns.barplot(data = university_melt, x = "HEI", y = "value", hue = "variable")
+sns.barplot(data = university_melt, x = "HEI", y = "value", hue = "variable", palette = "coolwarm")
 xlabels = ["UCC", "DCU", "TCD", "UCD", "NUIG", "UL", "NUIM"]
 ax.set_xticklabels(labels = xlabels, rotation=45, ha='right', rotation_mode='anchor')
 plt.tight_layout()
@@ -88,7 +88,7 @@ it_df = merge_points_2[merge_points_2["HEI"].isin(["Athlone Institute of Technol
 it_melt = it_df.melt(id_vars = "HEI", value_vars= ["R1_Points19", "R1_Points20", "R1_Points21"])
 
 fig, ax = plt.subplots()
-sns.barplot(data = it_melt, x = "HEI", y = "value", hue = "variable")
+sns.barplot(data = it_melt, x = "HEI", y = "value", hue = "variable", palette = "muted")
 xlabels = ["Athlone IT", "CIT", "GMIT", "IT Sligo", "IT Tralee", "WIT"]
 ax.set_xticklabels (labels = xlabels, rotation=45, ha='right', rotation_mode='anchor')
 plt.tight_layout()
@@ -126,7 +126,7 @@ top_5_df = merge_points_2[top_5_filter]
 
 fig, ax = plt.subplots()
 top_5_melt = top_5_df.melt(id_vars = ["Course Category"], value_vars= ["R1_Points19", "R1_Points20", "R1_Points21"])
-sns.violinplot(data = top_5_melt, y = "value", x = "Course Category", hue = "variable")
+sns.violinplot(data = top_5_melt, y = "value", x = "Course Category", hue = "variable", palette = "dark")
 xlabels =["ICT", "Health", "Business", "Arts", "Engineering"]
 ax.set_xticklabels(xlabels, rotation=45, ha='right', rotation_mode='anchor')
 plt.tight_layout()
@@ -135,7 +135,7 @@ plt.close()
 
 fig, ax = plt.subplots()
 top_5_melt = top_5_df.melt(id_vars = ["Course Category"], value_vars= ["R2_Points19", "R2_Points20", "R2_Points21"])
-sns.violinplot(data = top_5_melt, y = "value", x = "Course Category", hue = "variable")
+sns.violinplot(data = top_5_melt, y = "value", x = "Course Category", hue = "variable", palette = "bright")
 xlabels =["ICT", "Health", "Business", "Arts", "Engineering"]
 ax.set_xticklabels(xlabels, rotation=45, ha='right', rotation_mode='anchor')
 plt.tight_layout()
