@@ -1,6 +1,5 @@
 import re
 import requests as rq
-import csv
 import datetime as dt
 import os
 import pandas as pd
@@ -14,7 +13,8 @@ timenow = dt.datetime.now()
 nowstrng = timenow.strftime('%Y%m%d_%H%M%S')
 
 pdffilepath = currentpath + '\\' + 'Points_Data' + '\\' +  'cao2019' + nowstrng + '.pdf'
-excelfilepath = currentpath  + '\\' + 'Points_Data' + '\\' + 'cao2019' + nowstrng + '.xlsx'
+csvfilepath = currentpath  + '\\' + 'Points_Data' + '\\' + 'cao2019' + nowstrng + '.csv'
+wcharsfilepath = currentpath  + '\\' + 'Points_Data' + '\\' + 'cao2019_wchars' + nowstrng + '.csv'
 
 
 def download_file(download_url):
@@ -34,14 +34,23 @@ def download_file(download_url):
     for item in pointsdf:
         for info in item.values: 
             list.append(info) 
+            count = count + 1
         
         points2019 = pd.DataFrame (list, columns=colnames)
-        points2019.to_excel(excelfilepath, sheet_name='Sheet1', index=True)
+        points2019.to_csv(csvfilepath, encoding = 'utf-8', index = False)
     
+    print("Total Lines Processed: {}".format(count))
+
     return points2019
     
 
 points2019 = download_file(download_url= 'http://www2.cao.ie/points/lvl8_19.pdf')
+
+points2019_with_chars = points2019
+points2019_with_chars ['R1_Points19']  = points2019['R1_Points19'].str.replace("# +mat", "# +matric", regex = False)
+points2019_with_chars ['R2_Points19'] = points2019['R2_Points19'].str.replace("ic ", "", regex = False)
+
+points2019_with_chars.to_csv(wcharsfilepath, encoding = 'utf-8', index = False)
 
 points2019['R1_Points19'] = points2019['R1_Points19'].str.replace(r'[^0-9]+', '', regex = True)
 points2019['R2_Points19'] = points2019['R2_Points19'].str.replace(r'[^0-9]+','', regex = True)
