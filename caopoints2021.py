@@ -21,13 +21,9 @@ nowstrng = timenow.strftime('%Y%m%d_%H%M%S')
 currentpath = os.getcwd()
 
 
-
 #Getting data from CAO site
 resp = rq.get('http://www2.cao.ie/points/l8.php')
 
-response = urlopen('http://www2.cao.ie/points/l8.php')
-charset = response.headers.get_content_charset()
-print(charset)
 
 
 #Constructing filepath
@@ -47,8 +43,8 @@ with open(filepath, "w") as f:
     f.write(resp.text)
 
 
-#Regex Statement to identify lines containing course data
-#First section finds corse code - 1 letter and three numbers
+#Regex sequence to identify lines containing course data
+#First section finds course code - 1 letter and three numbers
 #Next section retrieves all other info - course name, points etc
 coursematch = re.compile(r'([A-Z]{2}[0-9]{3})(.*)')
 
@@ -84,8 +80,12 @@ headers = ["Course_Code", "Course_Name", "R1_Points21", "R2_Points21"]
 
 pointsData21 = pd.read_csv (csvfilepath, sep = ',', names = headers, encoding = 'cp1252')
 
+#Keeping a version of the dataframe with the # and * characters to look at these courses separately
 
-#Replacing all alphanumeric chars and words with nothing, so I can convert these columns to numeric
+pointsData21_with_chars = pointsData21
+
+
+#Replacing all non-numeric chars and words with nothing, so I can convert these columns to numeric
 pointsData21['R1_Points21'] = pointsData21['R1_Points21'].str.replace(r'[^0-9]+', '', regex = True)
 pointsData21['R2_Points21'] = pointsData21['R2_Points21'].str.replace(r'[^0-9]+','', regex = True)
 
@@ -98,3 +98,7 @@ pointsData21[["R1_Points21"]] = pointsData21[["R1_Points21"]].apply(pd.to_numeri
 pointsData21[["R2_Points21"]] = pointsData21[["R2_Points21"]].apply(pd.to_numeric, downcast = 'integer')
 
 pointsData21.to_csv(csvfilepath)
+
+with pd.option_context('expand_frame_repr', False):
+    print(pointsData21.head(n = 10))
+
