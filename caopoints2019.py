@@ -97,8 +97,8 @@ def download_student_data(download_url, yr):
 
     studentpoints = pd.DataFrame (list, columns=colnames)
     print("Points Breakdown : {}".format(yr))
-    print(studentpoints.head(n = 6))
-    return studentpoints.head(n = 6)
+    print(studentpoints.head(n = 8))
+    return studentpoints.head(n = 8)
 
 students_points_2021 = download_student_data("http://www2.cao.ie/app_scoring/points_stats/lc21pts.pdf", yr = "2021")
 students_points_2020 = download_student_data("http://www2.cao.ie/app_scoring/points_stats/lc20pts.pdf", yr = "2020")
@@ -112,7 +112,7 @@ student_points_melt = pd.melt(merge_2, id_vars=["Points_Range"], value_vars = ["
 student_points_melt['value']  = student_points_melt['value'].str.replace(",", "", regex = False)
 student_points_melt["value"] = pd.to_numeric(student_points_melt["value"], downcast = "integer")
 yr_order = ["Total_2019", "Total_2020", "Total_2021"]
-sns.barplot(data = student_points_melt, x = "variable", y= "value", hue = "Points_Range", order = yr_order, palette = "pastel")
+sns.barplot(data = student_points_melt, x = "variable", y= "value", hue = "Points_Range", order = yr_order, palette = "YlGnBu")
 plt.show()
 plt.close()
 

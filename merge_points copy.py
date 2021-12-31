@@ -96,9 +96,12 @@ plt.show()
 plt.close()
 
 
-pointsonly = merge_points_2[["R1_Points19", "R1_Points20", "R1_Points21"]]
+r1pointsonly = merge_points_2[["R1_Points19", "R1_Points20", "R1_Points21"]]
+r2pointsonly = merge_points_2[["R2_Points19", "R2_Points20", "R2_Points21"]]
 
-sns.boxplot(data = pointsonly, palette = "coolwarm")
+fig, (ax1, ax2) = plt.subplots(ncols = 2)
+sns.boxplot(ax = ax1, data = r1pointsonly, palette = "fireice")
+sns.boxplot(ax = ax2, data = r1pointsonly, palette = "fireice")
 plt.show()
 
 fig, ax = plt.subplots(figsize=(14,10))
