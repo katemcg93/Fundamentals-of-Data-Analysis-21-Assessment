@@ -46,7 +46,7 @@ The main Python packages used to develop these notebooks are as follows:
 - Urllib
 
 ## Nbviewer Links for Notebooks
-The notebooks can be viewed either in this repository, or using nbviewr.
+The notebooks can be viewed either in this repository, or using nbviewer.
 
 The links to the versions rendered in nbviewer are given below. 
 
