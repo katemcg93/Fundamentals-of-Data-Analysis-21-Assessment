@@ -52,5 +52,5 @@ The links to the versions rendered in nbviewer are given below.
 
 [PyPlot](https://nbviewer.org/github/katemcg93/Fundamentals-of-Data-Analysis-21-Assessment/blob/main/pyplot.ipynb)
 
-[CAO](https://github.com/katemcg93/Fundamentals-of-Data-Analysis-21-Assessment/blob/main/cao.ipynb)
+[CAO](https://nbviewer.org/github/katemcg93/Fundamentals-of-Data-Analysis-21-Assessment/blob/main/cao.ipynb)
 
