@@ -99,6 +99,8 @@ pointsData21[["R2_Points21"]] = pointsData21[["R2_Points21"]].apply(pd.to_numeri
 
 pointsData21.to_csv(csvfilepath)
 
+
+#Printing first 10 columns of dataframe to ensure it makes sense
 with pd.option_context('expand_frame_repr', False):
     print(pointsData21.head(n = 10))
 

@@ -104,18 +104,26 @@ sns.boxplot(ax = ax1, data = r1pointsonly, palette = "fireice")
 sns.boxplot(ax = ax2, data = r1pointsonly, palette = "fireice")
 plt.show()
 
+#Make plot bigger
 fig, ax = plt.subplots(figsize=(14,10))
 
+#Alignment parameters, will need this to rotate tick labels
 ha = ['right', 'center', 'left']
+#Initializing total column to store counts
 merge_points_2["Total Courses"] = 1
+#Group DF by course category then cound number of unique entries
 course_categories = merge_points_2.groupby(["Course Category"])["Total Courses"].count()
+#Convert the groupby object back to a df to make it easier to sort and plot
 course_df = pd.DataFrame(course_categories, columns = ["Total Courses"])
+#Sort in descending order by course category to get top 10
 sorted_courses = course_df.sort_values(by = ["Total Courses"], ascending = False)
 top_10_courses = sorted_courses.head(n = 10).plot(ax = ax, kind = "bar")
+#Fix labels so they're not overlapping
 xlabels = ax.get_xticklabels()
 ax.set_xticklabels(xlabels, rotation=45, ha='right', rotation_mode='anchor')
 ax.spines['right'].set_visible(False)
 ax.spines['top'].set_visible(False)
+
 plt.suptitle("Top 10 Areas of Study")
 plt.title("Based on Count of Courses Offered")
 plt.savefig("Top_10_courses.png", bbox_inches='tight')
