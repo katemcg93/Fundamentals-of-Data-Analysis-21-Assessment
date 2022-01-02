@@ -24,7 +24,7 @@ The second notebook, cao.ipynb, comprises an in-depth analysis of CAO points dat
 
 ## Getting Started
 
-The requirements.txt file in this notebook contains all packages required to run this project, as well as the relevant versions. 
+The requirements.txt file in this repository contains all packages required to run this project, as well as the relevant versions. 
 
 The main Python packages used to develop these notebooks are as follows:
 - Matplotlib.pyplot
